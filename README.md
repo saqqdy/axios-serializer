@@ -2,7 +2,7 @@
 
 # axios-serializer
 
-Detects what package manager was used for installation
+A serializer for axios
 
 [![NPM version][npm-image]][npm-url]
 [![Codacy Badge][codacy-image]][codacy-url]

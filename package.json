@@ -1,6 +1,6 @@
 {
 	"name": "axios-serializer",
-	"description": "Detects what package manager was used for installation",
+	"description": "A serializer for axios",
 	"version": "1.0.1",
 	"packageManager": "pnpm@7.25.0",
 	"main": "./lib/index.cjs",
