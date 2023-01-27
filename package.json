@@ -1,0 +1,117 @@
+{
+	"name": "axios-serializer",
+	"description": "Detects what package manager was used for installation",
+	"version": "1.0.1",
+	"packageManager": "pnpm@7.25.0",
+	"main": "./lib/index.cjs",
+	"module": "./es/index.mjs",
+	"typings": "./typings/index.d.ts",
+	"exports": {
+		".": {
+			"require": "./lib/index.cjs",
+			"import": "./es/index.mjs"
+		},
+		"./*": "./*"
+	},
+	"files": [
+		"bin",
+		"dist",
+		"es",
+		"lib",
+		"typings"
+	],
+	"directories": {
+		"bin": "bin",
+		"dist": "dist",
+		"es": "es",
+		"lib": "lib",
+		"src": "src"
+	},
+	"scripts": {
+		"build": "run-s clean build:{bundle,types} roll-types",
+		"build:bundle": "rollup -c build/rollup.config.ts --configPlugin @rollup/plugin-typescript",
+		"build:types": "tsc --emitDeclarationOnly --outDir temp -p src",
+		"build:docs": "rimraf docs && typedoc && prettier --write \"**/*.md\"",
+		"roll-types": "api-extractor run && rimraf temp",
+		"watch": "pnpm build:bundle -w",
+		"pub": "tscjs scripts/publish",
+		"unpub": "tscjs scripts/unpublish",
+		"sync": "tscjs scripts/sync",
+		"clean": "rimraf lib es dist",
+		"dist": "run-s clean build build:docs",
+		"test-unit": "jest --filter ./scripts/filter-unit.js",
+		"jest": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --coverage",
+		"coveralls": "cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+		"eslint": "eslint --fix .",
+		"prettier": "prettier --write \"**/*.{js,ts,jsx,tsx,yml,json,md}\""
+	},
+	"devDependencies": {
+		"@babel/core": "^7.20.12",
+		"@babel/preset-env": "^7.20.2",
+		"@babel/preset-typescript": "^7.18.6",
+		"@eslint-sets/eslint-config-ts": "^4.1.0",
+		"@microsoft/api-extractor": "^7.34.0",
+		"@rollup/plugin-alias": "^4.0.3",
+		"@rollup/plugin-babel": "^6.0.3",
+		"@rollup/plugin-commonjs": "^24.0.1",
+		"@rollup/plugin-node-resolve": "^15.0.1",
+		"@rollup/plugin-typescript": "^11.0.0",
+		"@types/jest": "^29.4.0",
+		"@types/node": "^18.11.18",
+		"chalk": "^5.2.0",
+		"core-js": "^3.27.2",
+		"coveralls": "^3.1.1",
+		"cross-env": "^7.0.3",
+		"eslint": "^8.32.0",
+		"jest": "^29.4.1",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^2.8.3",
+		"prettier-config-common": "^1.3.0",
+		"reinstaller": "^2.1.0",
+		"rimraf": "^4.1.2",
+		"rollup": "^3.11.0",
+		"rollup-plugin-filesize": "^9.1.2",
+		"rollup-plugin-replace-shebang": "^1.2.0",
+		"ts-jest": "^29.0.5",
+		"ts-morph": "^17.0.1",
+		"tsnd": "^1.1.0",
+		"typedoc": "^0.23.24",
+		"typedoc-plugin-markdown": "^3.14.0",
+		"typescript": "^4.9.4"
+	},
+	"peerDependencies": {
+		"debug": ">= 4",
+		"js-cool": ">= 2"
+	},
+	"pnpm": {
+		"peerDependencyRules": {
+			"ignoreMissing": [
+				"tslib",
+				"webpack"
+			],
+			"allowedVersions": {
+				"eslint": "^8.0.0"
+			}
+		}
+	},
+	"keywords": [
+		"which-pm",
+		"extension",
+		"axios-serializer",
+		"saqqdy"
+	],
+	"license": "MIT",
+	"author": "saqqdy <https://github.com/saqqdy>",
+	"homepage": "https://github.com/saqqdy/axios-serializer#readme",
+	"bugs": {
+		"url": "https://github.com/saqqdy/axios-serializer/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/saqqdy/axios-serializer.git"
+	},
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org",
+		"access": "public"
+	}
+}
