@@ -1,34 +1,33 @@
 {
 	"name": "axios-serializer",
 	"description": "A serializer for axios",
-	"version": "1.0.1",
-	"packageManager": "pnpm@7.25.0",
-	"main": "./lib/index.cjs",
-	"module": "./es/index.mjs",
-	"typings": "./typings/index.d.ts",
+	"version": "1.0.0-beta.1",
+	"packageManager": "pnpm@7.26.1",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.mjs",
+	"unpkg": "./dist/index.min.js",
+	"jsdelivr": "./dist/index.min.js",
+	"typings": "./dist/index.d.ts",
 	"exports": {
 		".": {
-			"require": "./lib/index.cjs",
-			"import": "./es/index.mjs"
+			"require": "./dist/index.cjs",
+			"import": "./dist/index.mjs"
 		},
 		"./*": "./*"
 	},
 	"files": [
-		"bin",
 		"dist",
 		"es",
-		"lib",
-		"typings"
+		"lib"
 	],
 	"directories": {
-		"bin": "bin",
 		"dist": "dist",
 		"es": "es",
 		"lib": "lib",
 		"src": "src"
 	},
 	"scripts": {
-		"build": "run-s clean build:{bundle,types} roll-types",
+		"build": "run-s clean build:{bundle,types,docs} roll-types",
 		"build:bundle": "rollup -c build/rollup.config.ts --configPlugin @rollup/plugin-typescript",
 		"build:types": "tsc --emitDeclarationOnly --outDir temp -p src",
 		"build:docs": "rimraf docs && typedoc && prettier --write \"**/*.md\"",
@@ -37,13 +36,20 @@
 		"pub": "tscjs scripts/publish",
 		"unpub": "tscjs scripts/unpublish",
 		"sync": "tscjs scripts/sync",
-		"clean": "rimraf lib es dist",
-		"dist": "run-s clean build build:docs",
+		"clean": "rimraf dist",
+		"dist": "run-s clean build",
 		"test-unit": "jest --filter ./scripts/filter-unit.js",
 		"jest": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --coverage",
 		"coveralls": "cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
 		"eslint": "eslint --fix .",
 		"prettier": "prettier --write \"**/*.{js,ts,jsx,tsx,yml,json,md}\""
+	},
+	"dependencies": {
+		"axios": "^1.2.5",
+		"core-js": "^3.27.2",
+		"is-retry-allowed": "^3.0.0",
+		"js-cool": "^2.8.0",
+		"regenerator-runtime": "^0.13.11"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.20.12",
@@ -59,10 +65,10 @@
 		"@types/jest": "^29.4.0",
 		"@types/node": "^18.11.18",
 		"chalk": "^5.2.0",
-		"core-js": "^3.27.2",
 		"coveralls": "^3.1.1",
 		"cross-env": "^7.0.3",
 		"eslint": "^8.32.0",
+		"fast-glob": "^3.2.12",
 		"jest": "^29.4.1",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.8.3",
@@ -71,7 +77,7 @@
 		"rimraf": "^4.1.2",
 		"rollup": "^3.11.0",
 		"rollup-plugin-filesize": "^9.1.2",
-		"rollup-plugin-replace-shebang": "^1.2.0",
+		"rollup-plugin-visualizer": "^5.9.0",
 		"ts-jest": "^29.0.5",
 		"ts-morph": "^17.0.1",
 		"tsnd": "^1.1.0",
@@ -80,7 +86,8 @@
 		"typescript": "^4.9.4"
 	},
 	"peerDependencies": {
-		"debug": ">= 4",
+		"axios": ">= 1",
+		"core-js": ">= 3",
 		"js-cool": ">= 2"
 	},
 	"pnpm": {
@@ -95,9 +102,12 @@
 		}
 	},
 	"keywords": [
-		"which-pm",
+		"axios",
+		"plugin",
 		"extension",
 		"axios-serializer",
+		"axios-plugin",
+		"axios-extend",
 		"saqqdy"
 	],
 	"license": "MIT",
