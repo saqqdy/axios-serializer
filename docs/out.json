@@ -324,24 +324,15 @@
 			"groups": [
 				{
 					"title": "Constructors",
-					"children": [
-						100
-					]
+					"children": [100]
 				},
 				{
 					"title": "Properties",
-					"children": [
-						105,
-						104,
-						103
-					]
+					"children": [105, 104, 103]
 				},
 				{
 					"title": "Methods",
-					"children": [
-						112,
-						109
-					]
+					"children": [112, 109]
 				}
 			],
 			"sources": [
@@ -818,21 +809,11 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"children": [
-						75
-					]
+					"children": [75]
 				},
 				{
 					"title": "Methods",
-					"children": [
-						96,
-						93,
-						79,
-						83,
-						86,
-						90,
-						76
-					]
+					"children": [96, 93, 79, 83, 86, 90, 76]
 				}
 			],
 			"sources": [
@@ -893,10 +874,7 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"children": [
-						8,
-						9
-					]
+					"children": [8, 9]
 				}
 			],
 			"sources": [
@@ -1005,12 +983,7 @@
 			"groups": [
 				{
 					"title": "Properties",
-					"children": [
-						5,
-						3,
-						6,
-						4
-					]
+					"children": [5, 3, 6, 4]
 				}
 			],
 			"sources": [
@@ -1266,9 +1239,7 @@
 													"groups": [
 														{
 															"title": "Properties",
-															"children": [
-																57
-															]
+															"children": [57]
 														}
 													],
 													"sources": [
@@ -1474,9 +1445,7 @@
 							"groups": [
 								{
 									"title": "Properties",
-									"children": [
-										68
-									]
+									"children": [68]
 								}
 							],
 							"sources": [
@@ -2543,48 +2512,9 @@
 				{
 					"title": "Properties",
 					"children": [
-						29,
-						30,
-						16,
-						20,
-						51,
-						13,
-						25,
-						62,
-						66,
-						15,
-						72,
-						17,
-						59,
-						60,
-						65,
-						48,
-						43,
-						50,
-						49,
-						19,
-						39,
-						35,
-						23,
-						24,
-						61,
-						12,
-						32,
-						31,
-						64,
-						58,
-						26,
-						27,
-						21,
-						22,
-						63,
-						14,
-						11,
-						18,
-						44,
-						28,
-						33,
-						34
+						29, 30, 16, 20, 51, 13, 25, 62, 66, 15, 72, 17, 59, 60, 65, 48, 43, 50, 49,
+						19, 39, 35, 23, 24, 61, 12, 32, 31, 64, 58, 26, 27, 21, 22, 63, 14, 11, 18,
+						44, 28, 33, 34
 					]
 				}
 			],
@@ -2651,30 +2581,19 @@
 	"groups": [
 		{
 			"title": "References",
-			"children": [
-				115
-			]
+			"children": [115]
 		},
 		{
 			"title": "Classes",
-			"children": [
-				99
-			]
+			"children": [99]
 		},
 		{
 			"title": "Interfaces",
-			"children": [
-				74,
-				7,
-				2,
-				10
-			]
+			"children": [74, 7, 2, 10]
 		},
 		{
 			"title": "Variables",
-			"children": [
-				1
-			]
+			"children": [1]
 		}
 	],
 	"sources": [
