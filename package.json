@@ -1,7 +1,7 @@
 {
 	"name": "axios-serializer",
 	"description": "A serializer for axios",
-	"version": "1.0.0-beta.1",
+	"version": "1.0.0-beta.2",
 	"packageManager": "pnpm@7.26.1",
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.mjs",
@@ -47,9 +47,7 @@
 	"dependencies": {
 		"axios": "^1.2.5",
 		"core-js": "^3.27.2",
-		"is-retry-allowed": "^3.0.0",
-		"js-cool": "^2.8.0",
-		"regenerator-runtime": "^0.13.11"
+		"js-cool": "^2.8.0"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.20.12",

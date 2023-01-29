@@ -1,4 +1,4 @@
-[index.md - v1.0.0-beta.1](../README.md) / [Exports](../modules.md) / AxiosSerializer
+[index.md - v1.0.0-beta.2](../README.md) / [Exports](../modules.md) / AxiosSerializer
 
 # Class: AxiosSerializer
 
@@ -35,7 +35,7 @@ AxiosSerializer class
 
 #### Defined in
 
-[src/index.ts:74](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L74)
+[src/index.ts:74](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L74)
 
 ## Properties
 
@@ -45,7 +45,7 @@ AxiosSerializer class
 
 #### Defined in
 
-[src/index.ts:73](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L73)
+[src/index.ts:73](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L73)
 
 ---
 
@@ -55,7 +55,7 @@ AxiosSerializer class
 
 #### Defined in
 
-[src/index.ts:72](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L72)
+[src/index.ts:72](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L72)
 
 ---
 
@@ -65,7 +65,7 @@ AxiosSerializer class
 
 #### Defined in
 
-[src/index.ts:71](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L71)
+[src/index.ts:71](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L71)
 
 ## Methods
 
@@ -87,7 +87,7 @@ Create request
 
 #### Defined in
 
-[src/index.ts:131](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L131)
+[src/index.ts:131](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L131)
 
 ---
 
@@ -109,4 +109,4 @@ Initialization
 
 #### Defined in
 
-[src/index.ts:85](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L85)
+[src/index.ts:85](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L85)

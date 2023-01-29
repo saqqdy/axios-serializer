@@ -1,4 +1,4 @@
-[index.md - v1.0.0-beta.1](../README.md) / [Exports](../modules.md) / AxiosSerializerConfig
+[index.md - v1.0.0-beta.2](../README.md) / [Exports](../modules.md) / AxiosSerializerConfig
 
 # Interface: AxiosSerializerConfig
 
@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[src/index.ts:36](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L36)
+[src/index.ts:36](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L36)
 
 ## Methods
 
@@ -46,7 +46,7 @@
 
 #### Defined in
 
-[src/index.ts:49](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L49)
+[src/index.ts:49](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L49)
 
 ---
 
@@ -66,7 +66,7 @@
 
 #### Defined in
 
-[src/index.ts:48](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L48)
+[src/index.ts:48](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L48)
 
 ---
 
@@ -87,7 +87,7 @@
 
 #### Defined in
 
-[src/index.ts:38](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L38)
+[src/index.ts:38](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L38)
 
 ---
 
@@ -107,7 +107,7 @@
 
 #### Defined in
 
-[src/index.ts:42](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L42)
+[src/index.ts:42](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L42)
 
 ---
 
@@ -128,7 +128,7 @@
 
 #### Defined in
 
-[src/index.ts:43](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L43)
+[src/index.ts:43](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L43)
 
 ---
 
@@ -148,7 +148,7 @@
 
 #### Defined in
 
-[src/index.ts:47](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L47)
+[src/index.ts:47](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L47)
 
 ---
 
@@ -168,4 +168,4 @@
 
 #### Defined in
 
-[src/index.ts:37](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L37)
+[src/index.ts:37](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L37)

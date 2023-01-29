@@ -1,4 +1,4 @@
-[index.md - v1.0.0-beta.1](../README.md) / [Exports](../modules.md) / AxiosSerializerObject
+[index.md - v1.0.0-beta.2](../README.md) / [Exports](../modules.md) / AxiosSerializerObject
 
 # Interface: AxiosSerializerObject
 
@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[src/index.ts:17](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L17)
+[src/index.ts:17](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L17)
 
 ---
 
@@ -29,7 +29,7 @@
 
 #### Defined in
 
-[src/index.ts:15](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L15)
+[src/index.ts:15](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L15)
 
 ---
 
@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[src/index.ts:18](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L18)
+[src/index.ts:18](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L18)
 
 ---
 
@@ -49,4 +49,4 @@
 
 #### Defined in
 
-[src/index.ts:16](https://github.com/saqqdy/axios-serializer/blob/f2cd39a/src/index.ts#L16)
+[src/index.ts:16](https://github.com/saqqdy/axios-serializer/blob/0bfaf47/src/index.ts#L16)
