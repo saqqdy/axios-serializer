@@ -6,9 +6,7 @@ module.exports = {
 				loose: true,
 				modules: 'auto',
 				useBuiltIns: 'usage',
-				corejs: 3,
-				targets: 'node 12.20'
-				// exclude: ['es.promise', 'es.promise.finally']
+				corejs: 3
 			}
 		],
 		'@babel/typescript'

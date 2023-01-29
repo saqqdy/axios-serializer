@@ -5,7 +5,6 @@ import commonjs from '@rollup/plugin-commonjs'
 import typescript from '@rollup/plugin-typescript'
 import alias, { type ResolverObject } from '@rollup/plugin-alias'
 import filesize from 'rollup-plugin-filesize'
-import shebang from 'rollup-plugin-replace-shebang'
 import pkg from '../package.json' assert { type: 'json' }
 import { banner, extensions, reporter } from './config'
 
@@ -36,10 +35,6 @@ const options: RollupOptions = {
 		nodeResolver,
 		commonjs({
 			sourceMap: false
-		}),
-		shebang({
-			shebang: '#!/usr/bin/env node',
-			skipBackslash: true // 跳过\u005c 反斜杠
 		}),
 		typescript({
 			compilerOptions: {

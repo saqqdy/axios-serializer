@@ -2,7 +2,7 @@
 
 # axios-serializer
 
-A serializer for axios
+axios-serializer 是一款企业级项目`axios`集成方案，采用 typescript 开发的 axios 扩展，集成了接口并发控制（可取消请求）功能
 
 [![NPM version][npm-image]][npm-url]
 [![Codacy Badge][codacy-image]][codacy-url]
@@ -17,28 +17,28 @@ A serializer for axios
 
 <div style="text-align: center; margin-bottom: 20px;" align="center">
 
-## **For API documentation, see: [API Docs](./docs/modules.md)**
+## **完整文档请查阅： [API 完整文档](./docs/modules.md)**
 
 </div>
 
-## Installing
+## 安装
 
-> `axios-serializer` comes with the latest version of axios, so you can install it without the `axios`
+> `axios-serializer`自带了最新版的 axios，可以不用安装`axios`包
 
 ```bash
-# use pnpm
+# 使用pnpm
 $ pnpm install axios-serializer
 
-# use npm
+# 使用npm
 $ npm install axios-serializer --save
 
-# use yarn
+# 使用yarn
 $ yarn add axios-serializer
 ```
 
-## Usage
+## 使用
 
-### General use
+### 常规用法
 
 ```js
 // {app_root}/src/plugins/axios.js
@@ -46,7 +46,7 @@ import { getCookie, setCookie } from 'js-cool'
 import AxiosSerializer from 'axios-serializer'
 
 /**
- * Set the request header
+ * 设置请求头
  *
  * @param {object} instance AxiosInstance
  */
@@ -54,10 +54,10 @@ function setHeaders(instance) {
   instance.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 }
 /**
- * Request Interceptor
+ * 请求拦截器
  *
  * @param {object} config AxiosRequestConfig
- * @param {object} options request options AxiosSerializerRequestOptions
+ * @param {object} options 请求参数AxiosSerializerRequestOptions
  * @returns AxiosRequestConfig
  */
 function onRequest(config, options = {}) {
@@ -65,7 +65,7 @@ function onRequest(config, options = {}) {
   return config
 }
 /**
- * Execute on request error
+ * 请求错误时执行
  *
  * @param {object} err Error
  */
@@ -73,10 +73,10 @@ function onRequestError(err) {
   console.error(err)
 }
 /**
- * Response Interceptor
+ * 响应拦截器
  *
  * @param {object} res AxiosResponse<any>
- * @param {object} options request options AxiosSerializerRequestOptions
+ * @param {object} options 请求参数AxiosSerializerRequestOptions
  * @returns Promise<unknown>
  */
 function onResponse(res, options = {}) {
@@ -84,7 +84,7 @@ function onResponse(res, options = {}) {
   return Promise.reject(res.data)
 }
 /**
- * Execute in response error
+ * 响应错误时执行
  *
  * @param {object} err Error
  */
@@ -92,7 +92,7 @@ function onResponseError(err) {
   console.error(err)
 }
 /**
- * Execute on request error & response error
+ * 请求错误或响应错误都执行
  *
  * @param {object} err Error
  */
@@ -100,7 +100,7 @@ function onError(err) {
   console.error(err)
 }
 /**
- * Request Cancelled
+ * 请求取消
  *
  * @param {object} err Error
  */
@@ -108,42 +108,42 @@ function onCancel(err) {
   console.error(err.message)
 }
 
-// Instantiation
+// 实例化
 const axiosSerializer = new AxiosSerializer({
-  unique: true, // Whether to cancel the previous similar requests, default: false
-  setHeaders, // function for setting request headers
-  onRequest, // Request Interceptor
-  onRequestError, // Execute on request error
-  onResponse, // Response Interceptor
-  onResponseError, // Execute on response error
-  onError, // Execute on request error & response error
-  onCancel // Callback when request is cancelled
+  unique: true, // 是否取消前面的相似请求，默认：false
+  setHeaders, // 设置请求头的方法
+  onRequest, // 请求拦截器
+  onRequestError, // 请求错误时执行
+  onResponse, // 响应拦截器
+  onResponseError, // 响应错误时执行
+  onError, // 请求错误或响应错误都执行
+  onCancel // 请求取消时的回调
 })
 
 export default options => {
-  // Here set the unique and orderly priority higher than the instantiation configuration
+  // 这里设置 unique 和 orderly 优先级高于实例化时候的配置
   options.unique = options.unique ?? false
-  // Here the unique has a higher priority
+  // 这里的unique优先级更高
   return axiosSerializer.create(options)
 }
 ```
 
-### Using with `vue2.0`
+### 在 vue2.x 里面使用
 
-Sometimes we need to use `this` (vue instance) inside `onRequest` or `onResponse`, we can use it like this
+有时候我们需要在`onRequest`或`onResponse`里面使用`this`（vue 实例），可以这样写
 
 ```js
 import AxiosSerializer from 'axios-serializer'
 
 let axiosSerializer = null
-// Request Interceptor
+// 请求拦截器
 function onRequest(config, options = {}) {
   // this => vueInstance
   return config
 }
-// Response Interceptor
+// 响应拦截器
 function onResponse(res, options = {}) {
-  // hide loading
+  // 隐藏loading动画
   if (this instanceof Vue) {
     this.$loader.hide()
   }
@@ -152,14 +152,14 @@ function onResponse(res, options = {}) {
 }
 
 export default options => {
-  // Only need to initialize once
+  // 只需要初始化一次
   if (!axiosSerializer)
     axiosSerializer = new AxiosSerializer({
       onRequest: onRequest.bind(this),
       onResponse: onResponse.bind(this)
     })
 
-  // show loading
+  // 显示loading动画
   if (this instanceof Vue) {
     this.$loader.show()
   }
@@ -167,7 +167,7 @@ export default options => {
 }
 ```
 
-## Support & Issues
+## 问题和支持
 
 Please open an issue [here](https://github.com/saqqdy/axios-serializer/issues).
 
