@@ -32,7 +32,7 @@ export interface AxiosSerializerRequestOptions<D = any> extends InternalAxiosReq
 	error?: string
 }
 
-export interface AxiosSerializerConfig {
+export interface AxiosSerializerConfig<D = any> extends InternalAxiosRequestConfig<D> {
 	unique?: boolean
 	setHeaders?(instance: AxiosInstance): void
 	onRequest?(
@@ -68,6 +68,7 @@ function getCurrentState(config: AxiosSerializerRequestOptions): AxiosSerializer
  * @return Promise
  */
 export class AxiosSerializer {
+	axiosInstance: AxiosInstance = null as unknown as AxiosInstance
 	waiting: Array<AxiosSerializerObject> = [] // Request Queue
 	unique: boolean // Whether to cancel the previous similar requests, default: false
 	onCancel // Callback when request is cancelled
@@ -83,13 +84,21 @@ export class AxiosSerializer {
 	 * Initialization
 	 */
 	public init(defaultOptions: AxiosSerializerConfig): void {
-		const { setHeaders, onRequest, onRequestError, onResponse, onResponseError, onError } =
-			defaultOptions
+		const {
+			setHeaders,
+			onRequest,
+			onRequestError,
+			onResponse,
+			onResponseError,
+			onError,
+			...options
+		} = defaultOptions
+		if (!this.axiosInstance) this.axiosInstance = axios.create(options)
 		// Set request headers
-		setHeaders && setHeaders(axios)
+		setHeaders && setHeaders(this.axiosInstance)
 		// Adding a request interceptor
 		onRequest &&
-			axios.interceptors.request.use(
+			this.axiosInstance.interceptors.request.use(
 				(config: InternalAxiosRequestConfig) => {
 					const currentState = getCurrentState(config)
 					currentState.lastRequestTime = Date.now()
@@ -104,7 +113,7 @@ export class AxiosSerializer {
 			)
 		// Adding a response interceptor
 		onResponse &&
-			axios.interceptors.response.use(
+			this.axiosInstance.interceptors.response.use(
 				res => {
 					return onResponse(res, (res.config as any).requestOptions)
 				},
@@ -160,7 +169,7 @@ export class AxiosSerializer {
 				}
 			}
 			// running
-			axios(options)
+			this.axiosInstance(options)
 				.then((res: any) => {
 					// Request success
 					resolve(res)
