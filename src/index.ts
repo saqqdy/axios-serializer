@@ -16,6 +16,7 @@ export interface AxiosSerializerObject {
 	url: string
 	promise: Promise<any>
 	source: CancelTokenSource
+	abortController: AbortController
 }
 
 export interface AxiosSerializerCurrentStateType {
@@ -140,6 +141,7 @@ export class AxiosSerializer {
 	public create(options: AxiosSerializerRequestOptions): Promise<any> {
 		const { unique = this.unique, url = '' } = options
 		const promiseKey = getRandomStr(6) + '_' + Date.now()
+		const abortController = new AbortController()
 		const source: CancelTokenSource = axios.CancelToken.source()
 		options.requestOptions = extend(
 			true,
@@ -147,6 +149,7 @@ export class AxiosSerializer {
 			options
 		) as unknown as AxiosSerializerRequestOptions
 		options.cancelToken = source.token
+		options.signal = abortController.signal
 		// eslint-disable-next-line no-async-promise-executor
 		const promise = new Promise(async (resolve, reject) => {
 			// Interface must return in order or need to cancel url same request
@@ -155,8 +158,10 @@ export class AxiosSerializer {
 				while (len > 0) {
 					len--
 					if (this.waiting[len].url === url) {
-						if (unique) this.waiting.splice(len, 1)[0].source.cancel('request canceled')
-						else {
+						if (unique) {
+							this.waiting.splice(len, 1)[0].source.cancel('request canceled')
+							// abortController.abort()
+						} else {
 							try {
 								await this.waiting[len]
 								// await this.waiting.splice(len, 1)[0].promise
@@ -189,7 +194,8 @@ export class AxiosSerializer {
 			promiseKey,
 			url,
 			promise,
-			source
+			source,
+			abortController
 		})
 		return promise
 	}
