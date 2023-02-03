@@ -1,6 +1,6 @@
-[index.md - v1.0.0-beta.3](README.md) / Exports
+[index.md - v1.0.0-beta.4](README.md) / Exports
 
-# index.md - v1.0.0-beta.3
+# index.md - v1.0.0-beta.4
 
 ## Table of contents
 
@@ -37,4 +37,4 @@ Renames and re-exports [AxiosSerializer](classes/AxiosSerializer.md)
 
 #### Defined in
 
-[src/index.ts:12](https://github.com/saqqdy/axios-serializer/blob/ac75641/src/index.ts#L12)
+[src/index.ts:12](https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L12)

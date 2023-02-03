@@ -1,4 +1,4 @@
-[index.md - v1.0.0-beta.3](../README.md) / [Exports](../modules.md) / AxiosSerializerCurrentStateType
+[index.md - v1.0.0-beta.4](../README.md) / [Exports](../modules.md) / AxiosSerializerCurrentStateType
 
 # Interface: AxiosSerializerCurrentStateType
 
@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[src/index.ts:22](https://github.com/saqqdy/axios-serializer/blob/ac75641/src/index.ts#L22)
+[src/index.ts:23](https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L23)
 
 ---
 
@@ -27,4 +27,4 @@
 
 #### Defined in
 
-[src/index.ts:23](https://github.com/saqqdy/axios-serializer/blob/ac75641/src/index.ts#L23)
+[src/index.ts:24](https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L24)

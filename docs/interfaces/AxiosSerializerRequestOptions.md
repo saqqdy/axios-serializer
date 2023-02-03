@@ -1,4 +1,4 @@
-[index.md - v1.0.0-beta.3](../README.md) / [Exports](../modules.md) / AxiosSerializerRequestOptions
+[index.md - v1.0.0-beta.4](../README.md) / [Exports](../modules.md) / AxiosSerializerRequestOptions
 
 # Interface: AxiosSerializerRequestOptions<D\>
 
@@ -97,7 +97,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:316
 
 #### Defined in
 
-[src/index.ts:27](https://github.com/saqqdy/axios-serializer/blob/ac75641/src/index.ts#L27)
+[src/index.ts:28](https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L28)
 
 ---
 
@@ -155,7 +155,7 @@ InternalAxiosRequestConfig.cancelToken
 
 #### Defined in
 
-[src/index.ts:30](https://github.com/saqqdy/axios-serializer/blob/ac75641/src/index.ts#L30)
+[src/index.ts:31](https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L31)
 
 ---
 
@@ -213,7 +213,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:338
 
 #### Defined in
 
-[src/index.ts:32](https://github.com/saqqdy/axios-serializer/blob/ac75641/src/index.ts#L32)
+[src/index.ts:33](https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L33)
 
 ---
 
@@ -461,7 +461,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:332
 
 #### Defined in
 
-[src/index.ts:29](https://github.com/saqqdy/axios-serializer/blob/ac75641/src/index.ts#L29)
+[src/index.ts:30](https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L30)
 
 ---
 
@@ -597,7 +597,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:335
 
 #### Defined in
 
-[src/index.ts:31](https://github.com/saqqdy/axios-serializer/blob/ac75641/src/index.ts#L31)
+[src/index.ts:32](https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L32)
 
 ---
 
@@ -607,7 +607,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:335
 
 #### Defined in
 
-[src/index.ts:28](https://github.com/saqqdy/axios-serializer/blob/ac75641/src/index.ts#L28)
+[src/index.ts:29](https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L29)
 
 ---
 
