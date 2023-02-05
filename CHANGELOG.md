@@ -4,4 +4,5 @@
 
 1. create project
 2. use AbortController
-3. [README.md](./README.md)
+3. use Symbol as promiseKey
+4. [README.md](./README.md)

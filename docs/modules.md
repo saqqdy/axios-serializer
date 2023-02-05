@@ -37,4 +37,4 @@ Renames and re-exports [AxiosSerializer](classes/AxiosSerializer.md)
 
 #### Defined in
 
-[src/index.ts:11](https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L11)
+[src/index.ts:11](https://github.com/saqqdy/axios-serializer/blob/2b6c28e/src/index.ts#L11)

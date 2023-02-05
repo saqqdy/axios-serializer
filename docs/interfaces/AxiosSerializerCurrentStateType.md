@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[src/index.ts:22](https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L22)
+[src/index.ts:22](https://github.com/saqqdy/axios-serializer/blob/2b6c28e/src/index.ts#L22)
 
 ---
 
@@ -27,4 +27,4 @@
 
 #### Defined in
 
-[src/index.ts:23](https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L23)
+[src/index.ts:23](https://github.com/saqqdy/axios-serializer/blob/2b6c28e/src/index.ts#L23)
