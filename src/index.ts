@@ -7,12 +7,11 @@ import type {
 } from 'axios'
 import axios from 'axios'
 import extend from 'js-cool/lib/extend'
-import getRandomStr from 'js-cool/lib/getRandomStr'
 
 export const namespace = 'axios-serializer'
 
 export interface AxiosSerializerObject {
-	promiseKey: string
+	promiseKey: symbol
 	url: string
 	promise: Promise<any>
 	source: CancelTokenSource
@@ -140,7 +139,7 @@ export class AxiosSerializer {
 	 */
 	public create(options: AxiosSerializerRequestOptions): Promise<any> {
 		const { unique = this.unique, url = '' } = options
-		const promiseKey = getRandomStr(6) + '_' + Date.now()
+		const promiseKey = Symbol('promiseKey')
 		const abortController = new AbortController()
 		const source: CancelTokenSource = axios.CancelToken.source()
 		options.requestOptions = extend(

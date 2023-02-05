@@ -1,6 +1,6 @@
 {
 	"id": 0,
-	"name": "index.md - v1.0.0-beta.4",
+	"name": "index.md - v1.0.0-beta.5",
 	"kind": 1,
 	"kindString": "Project",
 	"flags": {},
@@ -15,9 +15,9 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 204,
+					"line": 203,
 					"character": 28,
-					"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L204"
+					"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L203"
 				}
 			],
 			"target": 158
@@ -57,9 +57,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 76,
+							"line": 75,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L76"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L75"
 						}
 					],
 					"signatures": [
@@ -106,9 +106,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 72,
+							"line": 71,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L72"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L71"
 						}
 					],
 					"type": {
@@ -128,9 +128,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 75,
+							"line": 74,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L75"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L74"
 						}
 					],
 					"type": {
@@ -151,9 +151,9 @@
 									"sources": [
 										{
 											"fileName": "src/index.ts",
-											"line": 50,
+											"line": 49,
 											"character": 1,
-											"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L50"
+											"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L49"
 										}
 									],
 									"signatures": [
@@ -196,9 +196,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 74,
+							"line": 73,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L74"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L73"
 						}
 					],
 					"type": {
@@ -215,9 +215,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 73,
+							"line": 72,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L73"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L72"
 						}
 					],
 					"type": {
@@ -241,9 +241,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 141,
+							"line": 140,
 							"character": 8,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L141"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L140"
 						}
 					],
 					"signatures": [
@@ -307,9 +307,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 87,
+							"line": 86,
 							"character": 8,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L87"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L86"
 						}
 					],
 					"signatures": [
@@ -382,9 +382,9 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 71,
+					"line": 70,
 					"character": 13,
-					"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L71"
+					"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L70"
 				}
 			]
 		},
@@ -1624,9 +1624,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 37,
+							"line": 36,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L37"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L36"
 						}
 					],
 					"type": {
@@ -1824,9 +1824,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 50,
+							"line": 49,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L50"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L49"
 						}
 					],
 					"signatures": [
@@ -1867,9 +1867,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 49,
+							"line": 48,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L49"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L48"
 						}
 					],
 					"signatures": [
@@ -1910,9 +1910,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 39,
+							"line": 38,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L39"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L38"
 						}
 					],
 					"signatures": [
@@ -2012,9 +2012,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 43,
+							"line": 42,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L43"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L42"
 						}
 					],
 					"signatures": [
@@ -2055,9 +2055,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 44,
+							"line": 43,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L44"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L43"
 						}
 					],
 					"signatures": [
@@ -2169,9 +2169,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 48,
+							"line": 47,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L48"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L47"
 						}
 					],
 					"signatures": [
@@ -2212,9 +2212,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 38,
+							"line": 37,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L38"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L37"
 						}
 					],
 					"signatures": [
@@ -2307,9 +2307,9 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 36,
+					"line": 35,
 					"character": 17,
-					"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L36"
+					"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L35"
 				}
 			],
 			"typeParameters": [
@@ -2357,9 +2357,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 23,
+							"line": 22,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L23"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L22"
 						}
 					],
 					"type": {
@@ -2376,9 +2376,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 24,
+							"line": 23,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L24"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L23"
 						}
 					],
 					"type": {
@@ -2399,9 +2399,9 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 22,
+					"line": 21,
 					"character": 17,
-					"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L22"
+					"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L21"
 				}
 			]
 		},
@@ -2421,9 +2421,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 19,
+							"line": 18,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L19"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L18"
 						}
 					],
 					"type": {
@@ -2442,9 +2442,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 17,
+							"line": 16,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L17"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L16"
 						}
 					],
 					"type": {
@@ -2469,14 +2469,14 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 15,
+							"line": 14,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L15"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L14"
 						}
 					],
 					"type": {
 						"type": "intrinsic",
-						"name": "string"
+						"name": "symbol"
 					}
 				},
 				{
@@ -2488,9 +2488,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 18,
+							"line": 17,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L18"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L17"
 						}
 					],
 					"type": {
@@ -2509,9 +2509,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 16,
+							"line": 15,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L16"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L15"
 						}
 					],
 					"type": {
@@ -2535,9 +2535,9 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 14,
+					"line": 13,
 					"character": 17,
-					"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L14"
+					"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L13"
 				}
 			]
 		},
@@ -2627,9 +2627,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 28,
+							"line": 27,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L28"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L27"
 						}
 					],
 					"type": {
@@ -2825,9 +2825,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 31,
+							"line": 30,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L31"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L30"
 						}
 					],
 					"type": {
@@ -3023,9 +3023,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 33,
+							"line": 32,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L33"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L32"
 						}
 					],
 					"type": {
@@ -3547,9 +3547,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 30,
+							"line": 29,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L30"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L29"
 						}
 					],
 					"type": {
@@ -3847,9 +3847,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 32,
+							"line": 31,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L32"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L31"
 						}
 					],
 					"type": {
@@ -3868,9 +3868,9 @@
 					"sources": [
 						{
 							"fileName": "src/index.ts",
-							"line": 29,
+							"line": 28,
 							"character": 1,
-							"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L29"
+							"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L28"
 						}
 					],
 					"type": {
@@ -4110,9 +4110,9 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 27,
+					"line": 26,
 					"character": 17,
-					"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L27"
+					"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L26"
 				}
 			],
 			"typeParameters": [
@@ -4155,9 +4155,9 @@
 			"sources": [
 				{
 					"fileName": "src/index.ts",
-					"line": 12,
+					"line": 11,
 					"character": 13,
-					"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L12"
+					"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L11"
 				}
 			],
 			"type": {
@@ -4201,7 +4201,7 @@
 			"fileName": "src/index.ts",
 			"line": 1,
 			"character": 0,
-			"url": "https://github.com/saqqdy/axios-serializer/blob/188f473/src/index.ts#L1"
+			"url": "https://github.com/saqqdy/axios-serializer/blob/d164afd/src/index.ts#L1"
 		}
 	]
 }
