@@ -6,7 +6,7 @@ import type {
 	InternalAxiosRequestConfig
 } from 'axios'
 import axios from 'axios'
-import extend from 'js-cool/lib/extend'
+import { extend } from 'js-cool'
 
 export const namespace = 'axios-serializer'
 

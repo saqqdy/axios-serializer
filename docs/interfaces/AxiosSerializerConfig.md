@@ -1,4 +1,4 @@
-[index.md - v1.0.0-beta.5](../README.md) / [Exports](../modules.md) / AxiosSerializerConfig
+[index.md - v1.0.0-beta.6](../README.md) / [Exports](../modules.md) / AxiosSerializerConfig
 
 # Interface: AxiosSerializerConfig<D\>
 
@@ -79,7 +79,7 @@ InternalAxiosRequestConfig.adapter
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:315
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:319
 
 ---
 
@@ -93,7 +93,7 @@ InternalAxiosRequestConfig.auth
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:316
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:320
 
 ---
 
@@ -107,7 +107,7 @@ InternalAxiosRequestConfig.baseURL
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:305
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:309
 
 ---
 
@@ -137,7 +137,7 @@ InternalAxiosRequestConfig.beforeRedirect
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:328
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:332
 
 ---
 
@@ -151,7 +151,7 @@ InternalAxiosRequestConfig.cancelToken
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:333
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:337
 
 ---
 
@@ -165,7 +165,7 @@ InternalAxiosRequestConfig.data
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:311
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:315
 
 ---
 
@@ -179,7 +179,7 @@ InternalAxiosRequestConfig.decompress
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:334
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:338
 
 ---
 
@@ -199,7 +199,7 @@ InternalAxiosRequestConfig.env
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:338
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:342
 
 ---
 
@@ -213,7 +213,7 @@ InternalAxiosRequestConfig.formSerializer
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:341
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:345
 
 ---
 
@@ -227,7 +227,7 @@ InternalAxiosRequestConfig.headers
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:348
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:352
 
 ---
 
@@ -241,7 +241,7 @@ InternalAxiosRequestConfig.httpAgent
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:330
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:334
 
 ---
 
@@ -255,7 +255,7 @@ InternalAxiosRequestConfig.httpsAgent
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:331
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:335
 
 ---
 
@@ -269,7 +269,7 @@ InternalAxiosRequestConfig.insecureHTTPParser
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:337
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:341
 
 ---
 
@@ -283,7 +283,7 @@ InternalAxiosRequestConfig.maxBodyLength
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:325
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:329
 
 ---
 
@@ -297,7 +297,7 @@ InternalAxiosRequestConfig.maxContentLength
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:323
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:327
 
 ---
 
@@ -311,7 +311,7 @@ InternalAxiosRequestConfig.maxRate
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:327
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:331
 
 ---
 
@@ -325,7 +325,7 @@ InternalAxiosRequestConfig.maxRedirects
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:326
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:330
 
 ---
 
@@ -339,7 +339,7 @@ InternalAxiosRequestConfig.method
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:304
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:308
 
 ---
 
@@ -367,7 +367,7 @@ InternalAxiosRequestConfig.onDownloadProgress
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:322
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:326
 
 ---
 
@@ -395,7 +395,7 @@ InternalAxiosRequestConfig.onUploadProgress
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:321
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:325
 
 ---
 
@@ -409,7 +409,7 @@ InternalAxiosRequestConfig.params
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:309
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:313
 
 ---
 
@@ -423,7 +423,7 @@ InternalAxiosRequestConfig.paramsSerializer
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:310
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:314
 
 ---
 
@@ -437,7 +437,7 @@ InternalAxiosRequestConfig.proxy
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:332
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:336
 
 ---
 
@@ -451,7 +451,7 @@ InternalAxiosRequestConfig.responseEncoding
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:318
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:322
 
 ---
 
@@ -465,7 +465,7 @@ InternalAxiosRequestConfig.responseType
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:317
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:321
 
 ---
 
@@ -479,7 +479,7 @@ InternalAxiosRequestConfig.signal
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:336
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:340
 
 ---
 
@@ -493,7 +493,7 @@ InternalAxiosRequestConfig.socketPath
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:329
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:333
 
 ---
 
@@ -507,7 +507,7 @@ InternalAxiosRequestConfig.timeout
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:312
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:316
 
 ---
 
@@ -521,7 +521,7 @@ InternalAxiosRequestConfig.timeoutErrorMessage
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:313
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:317
 
 ---
 
@@ -535,7 +535,7 @@ InternalAxiosRequestConfig.transformRequest
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:306
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:310
 
 ---
 
@@ -549,7 +549,7 @@ InternalAxiosRequestConfig.transformResponse
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:307
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:311
 
 ---
 
@@ -563,7 +563,7 @@ InternalAxiosRequestConfig.transitional
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:335
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:339
 
 ---
 
@@ -573,7 +573,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:335
 
 #### Defined in
 
-[src/index.ts:36](https://github.com/saqqdy/axios-serializer/blob/2b6c28e/src/index.ts#L36)
+[src/index.ts:36](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L36)
 
 ---
 
@@ -587,7 +587,7 @@ InternalAxiosRequestConfig.url
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:303
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:307
 
 ---
 
@@ -601,7 +601,7 @@ InternalAxiosRequestConfig.validateStatus
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:324
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:328
 
 ---
 
@@ -615,7 +615,7 @@ InternalAxiosRequestConfig.withCredentials
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:314
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:318
 
 ---
 
@@ -629,7 +629,7 @@ InternalAxiosRequestConfig.xsrfCookieName
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:319
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:323
 
 ---
 
@@ -643,7 +643,7 @@ InternalAxiosRequestConfig.xsrfHeaderName
 
 #### Defined in
 
-node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:320
+node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:324
 
 ## Methods
 
@@ -663,7 +663,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:320
 
 #### Defined in
 
-[src/index.ts:49](https://github.com/saqqdy/axios-serializer/blob/2b6c28e/src/index.ts#L49)
+[src/index.ts:49](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L49)
 
 ---
 
@@ -683,7 +683,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:320
 
 #### Defined in
 
-[src/index.ts:48](https://github.com/saqqdy/axios-serializer/blob/2b6c28e/src/index.ts#L48)
+[src/index.ts:48](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L48)
 
 ---
 
@@ -704,7 +704,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:320
 
 #### Defined in
 
-[src/index.ts:38](https://github.com/saqqdy/axios-serializer/blob/2b6c28e/src/index.ts#L38)
+[src/index.ts:38](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L38)
 
 ---
 
@@ -724,7 +724,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:320
 
 #### Defined in
 
-[src/index.ts:42](https://github.com/saqqdy/axios-serializer/blob/2b6c28e/src/index.ts#L42)
+[src/index.ts:42](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L42)
 
 ---
 
@@ -745,7 +745,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:320
 
 #### Defined in
 
-[src/index.ts:43](https://github.com/saqqdy/axios-serializer/blob/2b6c28e/src/index.ts#L43)
+[src/index.ts:43](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L43)
 
 ---
 
@@ -765,7 +765,7 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:320
 
 #### Defined in
 
-[src/index.ts:47](https://github.com/saqqdy/axios-serializer/blob/2b6c28e/src/index.ts#L47)
+[src/index.ts:47](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L47)
 
 ---
 
@@ -785,4 +785,4 @@ node_modules/.pnpm/axios@1.2.5/node_modules/axios/index.d.ts:320
 
 #### Defined in
 
-[src/index.ts:37](https://github.com/saqqdy/axios-serializer/blob/2b6c28e/src/index.ts#L37)
+[src/index.ts:37](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L37)
