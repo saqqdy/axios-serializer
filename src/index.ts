@@ -8,7 +8,7 @@ import type {
 import axios from 'axios'
 import { extend } from 'js-cool'
 
-export const namespace = 'axios-serializer'
+// export const namespace = 'axios-serializer' as const
 
 export interface AxiosSerializerObject {
 	promiseKey: symbol
@@ -24,7 +24,7 @@ export interface AxiosSerializerCurrentStateType {
 }
 
 export interface AxiosSerializerRequestOptions<D = any> extends InternalAxiosRequestConfig<D> {
-	[namespace]?: any
+	['axios-serializer']?: any
 	unique?: boolean
 	requestOptions?: AxiosSerializerRequestOptions
 	cancelToken?: CancelToken
@@ -56,9 +56,9 @@ export interface AxiosSerializerConfig<D = any> extends InternalAxiosRequestConf
  * @return currentState
  */
 function getCurrentState(config: AxiosSerializerRequestOptions): AxiosSerializerCurrentStateType {
-	const currentState = config[namespace] || {}
+	const currentState = config['axios-serializer'] || {}
 	currentState.retryCount = currentState.retryCount || 0
-	config[namespace] = currentState
+	config['axios-serializer'] = currentState
 	return currentState
 }
 
@@ -67,7 +67,7 @@ function getCurrentState(config: AxiosSerializerRequestOptions): AxiosSerializer
  *
  * @return Promise
  */
-export class AxiosSerializer {
+class AxiosSerializer {
 	axiosInstance: AxiosInstance = null as unknown as AxiosInstance
 	waiting: Array<AxiosSerializerObject> = [] // Request Queue
 	unique: boolean // Whether to cancel the previous similar requests, default: false

@@ -1,9 +1,10 @@
+import { sep } from 'node:path'
 import type { RollupOptions } from 'rollup'
 import nodeResolve from '@rollup/plugin-node-resolve'
 import babel from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
-import cleanup from 'rollup-plugin-cleanup'
 import terser from '@rollup/plugin-terser'
+import cleanup from 'rollup-plugin-cleanup'
 import typescript from '@rollup/plugin-typescript'
 import json from '@rollup/plugin-json'
 import alias, { type ResolverObject } from '@rollup/plugin-alias'
@@ -12,7 +13,6 @@ import { visualizer } from 'rollup-plugin-visualizer'
 import pkg from '../package.json' assert { type: 'json' }
 import { banner, extensions, reporter } from './config'
 
-const externals = [...Object.keys(pkg.dependencies || {})]
 const nodeResolver = nodeResolve({
 	// Use the `package.json` "browser" field
 	browser: false,
@@ -22,7 +22,7 @@ const nodeResolver = nodeResolve({
 	moduleDirectories: ['node_modules']
 })
 const iifeGlobals = {
-	'core-js': 'coreJs'
+	axios: 'axios'
 }
 
 const options: RollupOptions = {
@@ -37,6 +37,11 @@ const options: RollupOptions = {
 			]
 		}),
 		nodeResolver,
+		babel({
+			babelHelpers: 'bundled',
+			extensions,
+			exclude: [/node_modules[\\/]core-js/]
+		}),
 		commonjs({
 			sourceMap: false,
 			exclude: ['core-js', 'axios']
@@ -50,11 +55,6 @@ const options: RollupOptions = {
 				target: 'es5'
 			}
 		}),
-		babel({
-			babelHelpers: 'bundled',
-			extensions,
-			exclude: ['node_modules']
-		}),
 		cleanup({
 			comments: 'all'
 		}),
@@ -63,8 +63,18 @@ const options: RollupOptions = {
 	]
 }
 
+function externalCjsEsm(id: string) {
+	return ['axios', 'js-cool', 'tslib', 'core-js', '@babel/runtime'].some(
+		k => id === k || new RegExp('^' + k + sep).test(id)
+	)
+}
+
+function externalCjsUmd(id: string) {
+	return ['axios'].some(k => id === k || new RegExp('^' + k + sep).test(id))
+}
+
 const distDir = (path: string) =>
-	process.env.BABEL_ENV === 'es5' ? path.replace('index', 'index.es5') : path
+	process.env.BABEL_ENV === 'es5' ? path.replace('index', 'es5/index') : path
 
 export default [
 	{
@@ -81,19 +91,16 @@ export default [
 				format: 'es'
 			}
 		],
-		external(id: string) {
-			return ['core-js', 'axios'].concat(externals).some(k => new RegExp('^' + k).test(id))
-		},
+		external: externalCjsEsm,
 		...options
 	},
 	{
-		// input: 'src/index.ts',
-		input: distDir('dist/index.mjs'),
+		input: distDir(pkg.module),
 		output: [
 			{
 				file: distDir('dist/index.iife.js'),
 				format: 'iife',
-				name: 'axiosSerializer',
+				name: 'AxiosSerializer',
 				extend: true,
 				globals: iifeGlobals,
 				banner
@@ -101,26 +108,24 @@ export default [
 			{
 				file: distDir(pkg.unpkg),
 				format: 'iife',
-				name: 'axiosSerializer',
+				name: 'AxiosSerializer',
 				extend: true,
 				globals: iifeGlobals,
 				banner,
 				plugins: [terser()]
 			}
 		],
-		external(id: string) {
-			return ['axios'].some(k => new RegExp('^' + k).test(id))
-		},
+		external: externalCjsUmd,
 		plugins: [
 			nodeResolver,
-			cleanup({
-				comments: 'all'
-			}),
 			commonjs({
 				sourceMap: false,
 				exclude: ['core-js', 'axios']
 			}),
 			json(),
+			cleanup({
+				comments: 'all'
+			}),
 			filesize({ reporter }),
 			visualizer()
 		]

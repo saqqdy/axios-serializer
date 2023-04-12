@@ -1,16 +1,12 @@
-[index.md - v1.0.0-beta.6](README.md) / Exports
+[index.md - v1.0.0-beta.7](README.md) / Exports
 
-# index.md - v1.0.0-beta.6
+# index.md - v1.0.0-beta.7
 
 ## Table of contents
 
-### References
-
-- [default](modules.md#default)
-
 ### Classes
 
-- [AxiosSerializer](classes/AxiosSerializer.md)
+- [default](classes/default.md)
 
 ### Interfaces
 
@@ -23,12 +19,6 @@
 
 - [namespace](modules.md#namespace)
 
-## References
-
-### default
-
-Renames and re-exports [AxiosSerializer](classes/AxiosSerializer.md)
-
 ## Variables
 
 ### namespace
@@ -37,4 +27,4 @@ Renames and re-exports [AxiosSerializer](classes/AxiosSerializer.md)
 
 #### Defined in
 
-[src/index.ts:11](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L11)
+[src/index.ts:13](https://github.com/saqqdy/axios-serializer/blob/1c86e21/src/index.ts#L13)

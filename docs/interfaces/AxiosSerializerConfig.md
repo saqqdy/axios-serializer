@@ -1,4 +1,4 @@
-[index.md - v1.0.0-beta.6](../README.md) / [Exports](../modules.md) / AxiosSerializerConfig
+[index.md - v1.0.0-beta.7](../README.md) / [Exports](../modules.md) / AxiosSerializerConfig
 
 # Interface: AxiosSerializerConfig<D\>
 
@@ -573,7 +573,7 @@ node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:339
 
 #### Defined in
 
-[src/index.ts:36](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L36)
+[src/index.ts:38](https://github.com/saqqdy/axios-serializer/blob/1c86e21/src/index.ts#L38)
 
 ---
 
@@ -663,7 +663,7 @@ node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:324
 
 #### Defined in
 
-[src/index.ts:49](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L49)
+[src/index.ts:51](https://github.com/saqqdy/axios-serializer/blob/1c86e21/src/index.ts#L51)
 
 ---
 
@@ -683,7 +683,7 @@ node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:324
 
 #### Defined in
 
-[src/index.ts:48](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L48)
+[src/index.ts:50](https://github.com/saqqdy/axios-serializer/blob/1c86e21/src/index.ts#L50)
 
 ---
 
@@ -704,7 +704,7 @@ node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:324
 
 #### Defined in
 
-[src/index.ts:38](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L38)
+[src/index.ts:40](https://github.com/saqqdy/axios-serializer/blob/1c86e21/src/index.ts#L40)
 
 ---
 
@@ -724,7 +724,7 @@ node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:324
 
 #### Defined in
 
-[src/index.ts:42](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L42)
+[src/index.ts:44](https://github.com/saqqdy/axios-serializer/blob/1c86e21/src/index.ts#L44)
 
 ---
 
@@ -745,7 +745,7 @@ node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:324
 
 #### Defined in
 
-[src/index.ts:43](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L43)
+[src/index.ts:45](https://github.com/saqqdy/axios-serializer/blob/1c86e21/src/index.ts#L45)
 
 ---
 
@@ -765,7 +765,7 @@ node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:324
 
 #### Defined in
 
-[src/index.ts:47](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L47)
+[src/index.ts:49](https://github.com/saqqdy/axios-serializer/blob/1c86e21/src/index.ts#L49)
 
 ---
 
@@ -785,4 +785,4 @@ node_modules/.pnpm/axios@1.3.4/node_modules/axios/index.d.ts:324
 
 #### Defined in
 
-[src/index.ts:37](https://github.com/saqqdy/axios-serializer/blob/fb79c22/src/index.ts#L37)
+[src/index.ts:39](https://github.com/saqqdy/axios-serializer/blob/1c86e21/src/index.ts#L39)
