@@ -17,7 +17,7 @@ A serializer for axios
 
 <div style="text-align: center; margin-bottom: 20px;" align="center">
 
-### **[Documentation](./docs/index.html)** • **[Change Log](./CHANGELOG.md)**
+### **[Documentation](https://www.saqqdy.com/axios-serializer)** • **[Change Log](./CHANGELOG.md)**
 
 **Read this in other languages: English | [简体中文](./README-zh_CN.md)**
 
