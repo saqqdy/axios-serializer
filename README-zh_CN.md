@@ -195,8 +195,8 @@ Please open an issue [here](https://github.com/saqqdy/axios-serializer/issues).
 [codecov-url]: https://codecov.io/github/saqqdy/axios-serializer?branch=master
 [download-image]: https://img.shields.io/npm/dm/axios-serializer.svg?style=flat-square
 [download-url]: https://npmjs.org/package/axios-serializer
-[gzip-image]: http://img.badgesize.io/https://unpkg.com/axios-serializer/dist/index.mjs?compression=gzip&label=gzip%20size:%20JS
-[gzip-url]: http://img.badgesize.io/https://unpkg.com/axios-serializer/dist/index.mjs?compression=gzip&label=gzip%20size:%20JS
+[gzip-image]: http://img.badgesize.io/https://unpkg.com/axios-serializer/dist/index.min.js?compression=gzip&label=gzip%20size:%20JS
+[gzip-url]: http://img.badgesize.io/https://unpkg.com/axios-serializer/dist/index.min.js?compression=gzip&label=gzip%20size:%20JS
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: LICENSE
 [sonar-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=saqqdy_axios-serializer
