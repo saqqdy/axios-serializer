@@ -31,11 +31,12 @@
 		"typings"
 	],
 	"scripts": {
-		"build": "run-s clean build:{bundle,es5,types,docs} roll-types",
+		"build": "run-s clean build:{bundle,es5,types} roll-types",
 		"build:bundle": "rollup -c build/rollup.config.ts --configPlugin @rollup/plugin-typescript",
 		"build:es5": "cross-env BABEL_ENV=es5 pnpm build:bundle",
 		"build:types": "tsc -p src/tsconfig.json",
 		"build:docs": "rm-all docs && typedoc && prettier --write \"**/*.md\"",
+		"deploy": "sh scripts/deploy.sh",
 		"roll-types": "api-extractor run && rm-all temp && cp dist/index.d.ts dist/es5",
 		"watch": "pnpm build:bundle -w",
 		"pub": "tscjs scripts/publish",
