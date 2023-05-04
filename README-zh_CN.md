@@ -17,9 +17,9 @@ axios-serializer 是一款企业级项目`axios`集成方案，采用 typescript
 
 <div style="text-align: center; margin-bottom: 20px;" align="center">
 
-## **[API 文档](./docs/modules.md)** • **[更新日志](./CHANGELOG.md)**
+### **[API 文档](./docs/modules.md)** • **[更新日志](./CHANGELOG.md)**
 
-## **使用其他语言阅读：[English](./README.md) | 简体中文**
+**使用其他语言阅读：[English](./README.md) | 简体中文**
 
 </div>
 
