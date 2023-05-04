@@ -17,7 +17,9 @@ A serializer for axios
 
 <div style="text-align: center; margin-bottom: 20px;" align="center">
 
-## **For API documentation, see: [API Docs](./docs/modules.md)**
+## **[Documentation](./docs/modules.md)** • **[Change Log](./CHANGELOG.md)**
+
+## **Read this in other languages: English | [简体中文](./README-zh_CN.md)**
 
 </div>
 
@@ -165,6 +167,16 @@ export default options => {
   }
   return axiosSerializer.create(options)
 }
+```
+
+### Using unpkg CDN
+
+```html
+<!-- for modern browser -->
+<script src="https://unpkg.com/axios-serializer@1.0.0/dist/index.min.js"></script>
+
+<!-- for IE11 -->
+<script src="https://unpkg.com/axios-serializer@1.0.0/dist/es5/index.min.js"></script>
 ```
 
 ## Support & Issues

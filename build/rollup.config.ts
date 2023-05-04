@@ -1,4 +1,4 @@
-import { sep } from 'node:path'
+import { join, sep } from 'node:path'
 import type { RollupOptions } from 'rollup'
 import nodeResolve from '@rollup/plugin-node-resolve'
 import babel from '@rollup/plugin-babel'
@@ -8,6 +8,7 @@ import cleanup from 'rollup-plugin-cleanup'
 import typescript from '@rollup/plugin-typescript'
 import json from '@rollup/plugin-json'
 import alias, { type ResolverObject } from '@rollup/plugin-alias'
+import injectCode from 'rollup-plugin-inject-code'
 import filesize from 'rollup-plugin-filesize'
 import { visualizer } from 'rollup-plugin-visualizer'
 import pkg from '../package.json' assert { type: 'json' }
@@ -37,22 +38,21 @@ const options: RollupOptions = {
 			]
 		}),
 		nodeResolver,
-		babel({
-			babelHelpers: 'bundled',
-			extensions,
-			exclude: [/node_modules[\\/]core-js/]
-		}),
 		commonjs({
 			sourceMap: false,
 			exclude: ['core-js', 'axios']
 		}),
 		json(),
+		babel({
+			babelHelpers: 'bundled',
+			extensions,
+			exclude: [/node_modules[\\/]core-js/]
+		}),
 		typescript({
+			filterRoot: join(process.cwd(), 'src'),
 			compilerOptions: {
-				outDir: undefined,
 				declaration: false,
-				declarationDir: undefined,
-				target: 'es5'
+				sourceMap: true
 			}
 		}),
 		cleanup({
@@ -69,32 +69,61 @@ function externalCjsEsm(id: string) {
 	)
 }
 
-function externalCjsUmd(id: string) {
+function externalCjsEs5(id: string) {
+	return ['axios', 'tslib', 'core-js', '@babel/runtime'].some(
+		k => id === k || new RegExp('^' + k + sep).test(id)
+	)
+}
+
+function externalUmd(id: string) {
 	return ['axios'].some(k => id === k || new RegExp('^' + k + sep).test(id))
 }
 
 const distDir = (path: string) =>
 	process.env.BABEL_ENV === 'es5' ? path.replace('index', 'es5/index') : path
 
-export default [
-	{
-		input: 'src/index.ts',
-		output: [
+export default (process.env.BABEL_ENV !== 'es5'
+	? [
 			{
-				file: distDir(pkg.main),
-				exports: 'auto',
-				format: 'cjs'
-			},
-			{
-				file: distDir(pkg.module),
-				exports: 'auto',
-				format: 'es'
+				input: 'src/index.ts',
+				output: [
+					{
+						file: distDir(pkg.main),
+						exports: 'auto',
+						format: 'cjs'
+					},
+					{
+						file: distDir(pkg.module),
+						exports: 'auto',
+						format: 'es'
+					}
+				],
+				external: externalCjsEsm,
+				...options
 			}
-		],
-		external: externalCjsEsm,
-		...options
-	},
+	  ]
+	: [
+			{
+				input: pkg.module,
+				output: [
+					{
+						file: distDir(pkg.main),
+						exports: 'auto',
+						format: 'cjs'
+					},
+					{
+						file: distDir(pkg.module),
+						exports: 'auto',
+						format: 'es'
+					}
+				],
+				external: externalCjsEs5,
+				...options
+			}
+	  ]
+).concat([
 	{
+		// input: 'src/index.ts',
 		input: distDir(pkg.module),
 		output: [
 			{
@@ -103,7 +132,13 @@ export default [
 				name: 'AxiosSerializer',
 				extend: true,
 				globals: iifeGlobals,
-				banner
+				sourcemap: true,
+				banner,
+				plugins: [
+					injectCode({
+						path: './node_modules/axios/dist/axios.min.js'
+					})
+				]
 			},
 			{
 				file: distDir(pkg.unpkg),
@@ -111,11 +146,17 @@ export default [
 				name: 'AxiosSerializer',
 				extend: true,
 				globals: iifeGlobals,
+				sourcemap: true,
 				banner,
-				plugins: [terser()]
+				plugins: [
+					terser(),
+					injectCode({
+						path: './node_modules/axios/dist/axios.min.js'
+					})
+				]
 			}
 		],
-		external: externalCjsUmd,
+		external: externalUmd,
 		plugins: [
 			nodeResolver,
 			commonjs({
@@ -130,4 +171,4 @@ export default [
 			visualizer()
 		]
 	}
-]
+])
