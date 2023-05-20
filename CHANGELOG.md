@@ -1,5 +1,10 @@
 # Change logs
 
+## 2023.05.20 v1.1.0
+
+1. new way to use
+2. upgrade all packages
+
 ## 2023.05.05 v1.0.1
 
 1. some docs work

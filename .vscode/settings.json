@@ -13,6 +13,7 @@
 		"instanceof",
 		"jsdelivr",
 		"lcov",
+		"onwarn",
 		"picocolors",
 		"pnpm",
 		"reinstaller",

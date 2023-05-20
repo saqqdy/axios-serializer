@@ -4,7 +4,8 @@ import babel from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
 import terser from '@rollup/plugin-terser'
 import typescript from '@rollup/plugin-typescript'
-import json from ' @rollup/plugin-json'
+import json from '@rollup/plugin-json'
+import injectCode from 'rollup-plugin-inject-code'
 import filesize from 'rollup-plugin-filesize'
 import { visualizer } from 'rollup-plugin-visualizer'
 import { banner, extensions, reporter } from './config'
@@ -92,7 +93,7 @@ function createEntry(config: Config) {
 		config.file.endsWith('prod.js')
 
 	const _config: Options = {
-		external: [],
+		external: ['axios'],
 		input: config.input,
 		plugins: [],
 		output: {
@@ -114,10 +115,15 @@ function createEntry(config: Config) {
 
 	if (isGlobalBuild) {
 		_config.output.name = _config.output.name || 'AxiosSerializer'
+		_config.output.plugins.push(
+			injectCode({
+				path: './node_modules/axios/dist/axios.min.js'
+			})
+		)
 	}
 
 	if (!isGlobalBuild) {
-		_config.external.push('core-js')
+		_config.external.push('core-js', 'js-cool')
 	}
 
 	_config.plugins.push(nodeResolve(), commonjs(), json())
