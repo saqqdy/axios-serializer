@@ -34,14 +34,14 @@ export interface Options extends RollupOptions {
 const configs: Config[] = [
 	{
 		input: 'src/index.ts',
-		file: 'dist/axios-serializer.esm-browser.js',
+		file: 'dist/index.esm-browser.js',
 		format: 'es',
 		browser: true,
 		env: 'development'
 	},
 	{
 		input: 'src/index.ts',
-		file: 'dist/axios-serializer.esm-browser.prod.js',
+		file: 'dist/index.esm-browser.prod.js',
 		format: 'es',
 		browser: true,
 		minify: true,
@@ -49,32 +49,32 @@ const configs: Config[] = [
 	},
 	{
 		input: 'src/index.ts',
-		file: 'dist/axios-serializer.esm-bundler.js',
+		file: 'dist/index.esm-bundler.js',
 		format: 'es',
 		env: 'development'
 	},
 	{
 		input: 'src/index.ts',
-		file: 'dist/axios-serializer.mjs',
+		file: 'dist/index.mjs',
 		format: 'es',
 		env: 'development'
 	},
 	{
 		input: 'src/index.ts',
-		file: 'dist/axios-serializer.global.js',
+		file: 'dist/index.global.js',
 		format: 'iife',
 		env: 'development'
 	},
 	{
 		input: 'src/index.ts',
-		file: 'dist/axios-serializer.global.prod.js',
+		file: 'dist/index.global.prod.js',
 		format: 'iife',
 		minify: true,
 		env: 'production'
 	},
 	{
 		input: 'src/index.ts',
-		file: 'dist/axios-serializer.cjs.js',
+		file: 'dist/index.cjs.js',
 		format: 'cjs',
 		env: 'development'
 	}

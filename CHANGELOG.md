@@ -1,5 +1,10 @@
 # Change logs
 
+## 2023.05.30 v1.1.1
+
+1. new outputs
+2. upgrade all packages
+
 ## 2023.05.20 v1.1.0
 
 1. new way to use

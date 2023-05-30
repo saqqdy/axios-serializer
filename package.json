@@ -1,37 +1,35 @@
 {
 	"name": "axios-serializer",
 	"description": "A serializer for axios",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"packageManager": "pnpm@8.5.1",
-	"main": "dist/axios-serializer.cjs.js",
-	"module": "dist/axios-serializer.esm-bundler.js",
-	"browser": "dist/axios-serializer.esm-browser.js",
-	"unpkg": "dist/axios-serializer.global.js",
-	"jsdelivr": "dist/axios-serializer.global.js",
+	"main": "dist/index.cjs.js",
+	"module": "dist/index.esm-bundler.js",
+	"browser": "dist/index.esm-browser.js",
+	"unpkg": "dist/index.global.js",
+	"jsdelivr": "dist/index.global.js",
 	"types": "dist/index.d.ts",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
-			"module": "./dist/axios-serializer.esm-bundler.js",
-			"require": "./dist/axios-serializer.cjs.js",
-			"import": "./dist/axios-serializer.mjs"
+			"module": "./dist/index.esm-bundler.js",
+			"require": "./dist/index.cjs.js",
+			"import": "./dist/index.mjs"
 		},
 		"./*": "./*"
 	},
 	"directories": {
-		"lib": "lib",
 		"dist": "dist",
 		"src": "src"
 	},
 	"files": [
-		"lib",
 		"dist",
 		"typings"
 	],
 	"scripts": {
-		"build": "run-s clean build:{bundle,types} roll-types",
+		"build": "run-s clean build:{bundle,types}",
 		"build:bundle": "rollup -c build/rollup.config.ts --configPlugin @rollup/plugin-typescript",
-		"build:types": "tsc -p src/tsconfig.json",
+		"build:types": "tsc -p src/tsconfig.json && pnpm roll-types",
 		"build:docs": "rm-all docs && typedoc && prettier --write \"**/*.md\"",
 		"deploy": "sh scripts/deploy.sh",
 		"roll-types": "api-extractor run && rm-all temp",
@@ -50,14 +48,14 @@
 	},
 	"dependencies": {
 		"axios": "^1.4.0",
-		"js-cool": "^4.0.0"
+		"js-cool": "^4.4.0"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.21.8",
-		"@babel/preset-env": "^7.21.5",
+		"@babel/core": "^7.22.1",
+		"@babel/preset-env": "^7.22.4",
 		"@babel/preset-typescript": "^7.21.5",
-		"@eslint-sets/eslint-config-ts": "^5.2.0",
-		"@microsoft/api-extractor": "^7.34.9",
+		"@eslint-sets/eslint-config-ts": "^5.3.0",
+		"@microsoft/api-extractor": "^7.35.1",
 		"@rollup/plugin-babel": "^6.0.3",
 		"@rollup/plugin-commonjs": "^25.0.0",
 		"@rollup/plugin-json": "^6.0.0",
@@ -65,7 +63,7 @@
 		"@rollup/plugin-terser": "^0.4.3",
 		"@rollup/plugin-typescript": "^11.1.1",
 		"@types/jest": "^29.5.1",
-		"@types/node": "^20.2.1",
+		"@types/node": "^20.2.5",
 		"chalk": "^5.2.0",
 		"core-js": "^3.30.2",
 		"coveralls": "^3.1.1",
@@ -79,9 +77,9 @@
 		"prettier-config-common": "^1.4.0",
 		"reinstaller": "^3.0.0",
 		"rm-all": "^1.0.0",
-		"rollup": "^3.22.0",
+		"rollup": "^3.23.0",
 		"rollup-plugin-filesize": "^10.0.0",
-		"rollup-plugin-inject-code": "^1.0.0",
+		"rollup-plugin-inject-code": "^1.1.0",
 		"rollup-plugin-visualizer": "^5.9.0",
 		"ts-jest": "^29.1.0",
 		"ts-morph": "^18.0.0",
