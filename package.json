@@ -1,13 +1,13 @@
 {
 	"name": "axios-serializer",
 	"description": "A serializer for axios",
-	"version": "1.1.0",
-	"packageManager": "pnpm@8.5.1",
+	"version": "1.2.0-beta.1",
+	"packageManager": "pnpm@8.6.7",
 	"main": "dist/index.cjs.js",
 	"module": "dist/index.esm-bundler.js",
 	"browser": "dist/index.esm-browser.js",
-	"unpkg": "dist/index.global.js",
-	"jsdelivr": "dist/index.global.js",
+	"unpkg": "dist/index.global.prod.js",
+	"jsdelivr": "dist/index.global.prod.js",
 	"types": "dist/index.d.ts",
 	"exports": {
 		".": {
@@ -28,7 +28,7 @@
 	],
 	"scripts": {
 		"build": "run-s clean build:{bundle,types}",
-		"build:bundle": "rollup -c build/rollup.config.ts --configPlugin @rollup/plugin-typescript",
+		"build:bundle": "tscjs scripts/build",
 		"build:types": "tsc -p src/tsconfig.json && pnpm roll-types",
 		"build:docs": "rm-all docs && typedoc && prettier --write \"**/*.md\"",
 		"deploy": "sh scripts/deploy.sh",
@@ -48,13 +48,14 @@
 	},
 	"dependencies": {
 		"axios": "^1.4.0",
-		"js-cool": "^5.1.0"
+		"js-cool": "^5.1.0",
+		"tslib": "^2.6.0"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.22.8",
 		"@babel/preset-env": "^7.22.7",
 		"@babel/preset-typescript": "^7.22.5",
-		"@eslint-sets/eslint-config-ts": "^5.6.0",
+		"@eslint-sets/eslint-config-ts": "^5.6.1",
 		"@microsoft/api-extractor": "^7.36.1",
 		"@rollup/plugin-babel": "^6.0.3",
 		"@rollup/plugin-commonjs": "^25.0.2",
@@ -76,7 +77,7 @@
 		"prettier": "^2.8.8",
 		"prettier-config-common": "^1.4.0",
 		"reinstaller": "^3.0.2",
-		"rm-all": "^1.1.0",
+		"rm-all": "^1.1.1",
 		"rollup": "^3.26.2",
 		"rollup-plugin-filesize": "^10.0.0",
 		"rollup-plugin-inject-code": "^1.1.0",
@@ -92,6 +93,7 @@
 	"peerDependencies": {
 		"axios": ">= 1"
 	},
+	"sideEffects": false,
 	"pnpm": {
 		"peerDependencyRules": {
 			"ignoreMissing": [

@@ -55,12 +55,6 @@ const configs: Config[] = [
 	},
 	{
 		input: 'src/index.ts',
-		file: 'dist/index.mjs',
-		format: 'es',
-		env: 'development'
-	},
-	{
-		input: 'src/index.ts',
 		file: 'dist/index.global.js',
 		format: 'iife',
 		env: 'development'
@@ -102,7 +96,9 @@ function createEntry(config: Config) {
 			exports: 'auto',
 			extend: true,
 			plugins: [],
-			globals: {}
+			globals: {
+				axios: 'axios'
+			}
 		},
 		onwarn: (msg: any, warn) => {
 			if (!/Circular/.test(msg)) {
@@ -123,7 +119,7 @@ function createEntry(config: Config) {
 	}
 
 	if (!isGlobalBuild) {
-		_config.external.push('core-js', 'js-cool')
+		_config.external.push('core-js', 'js-cool', 'tslib')
 	}
 
 	_config.plugins.push(nodeResolve(), commonjs(), json())

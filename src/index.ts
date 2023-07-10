@@ -10,7 +10,45 @@ import { extend } from 'js-cool'
 
 // export const namespace = 'axios-serializer' as const
 
-export interface AxiosSerializerObject {
+export interface SerializerOptions extends Record<string, unknown> {
+	unique?: boolean
+	orderly?: boolean
+	onCancel?: (err: any) => void
+}
+
+export interface SerializerCurrentStateType {
+	lastRequestTime: number
+	retryCount: number
+}
+
+export interface SerializerRequestOptions<D = any> extends InternalAxiosRequestConfig<D> {
+	['axios-serializer']?: any
+	unique?: boolean
+	orderly?: boolean
+	requestOptions?: SerializerRequestOptions
+	cancelToken?: CancelToken
+	type?: string
+	error?: boolean
+}
+
+export interface SerializerConfig<D = any> extends InternalAxiosRequestConfig<D> {
+	unique?: boolean
+	setHeaders?(instance: AxiosInstance): void
+	onRequest?(
+		config: InternalAxiosRequestConfig,
+		requestOptions: SerializerRequestOptions
+	): InternalAxiosRequestConfig | Promise<InternalAxiosRequestConfig>
+	onRequestError?(error: any): void
+	onResponse?(
+		res: AxiosResponse<any>,
+		requestOptions: SerializerRequestOptions
+	): AxiosResponse<any> | Promise<AxiosResponse<any>>
+	onResponseError?(error: any): void
+	onError?(error: any): void
+	onCancel?(error: any): void
+}
+
+export interface Series {
 	promiseKey: symbol
 	url: string
 	promise: Promise<any>
@@ -18,44 +56,15 @@ export interface AxiosSerializerObject {
 	abortController: AbortController
 }
 
-export interface AxiosSerializerCurrentStateType {
-	lastRequestTime: number
-	retryCount: number
-}
-
-export interface AxiosSerializerRequestOptions<D = any> extends InternalAxiosRequestConfig<D> {
-	['axios-serializer']?: any
-	unique?: boolean
-	requestOptions?: AxiosSerializerRequestOptions
-	cancelToken?: CancelToken
-	type?: string
-	error?: string
-}
-
-export interface AxiosSerializerConfig<D = any> extends InternalAxiosRequestConfig<D> {
-	unique?: boolean
-	setHeaders?(instance: AxiosInstance): void
-	onRequest?(
-		config: InternalAxiosRequestConfig,
-		requestOptions: AxiosSerializerRequestOptions
-	): InternalAxiosRequestConfig | Promise<InternalAxiosRequestConfig>
-	onRequestError?(error: any): void
-	onResponse?(
-		res: AxiosResponse<any>,
-		requestOptions: AxiosSerializerRequestOptions
-	): AxiosResponse<any> | Promise<AxiosResponse<any>>
-	onResponseError?(error: any): void
-	onError?(error: any): void
-	onCancel?(error: any): void
-}
+export type WaitingList = Record<string, Series[]>
 
 /**
  * the config for retry when initialize and return
  *
- * @param  config - AxiosSerializerRequestOptions
+ * @param  config - SerializerRequestOptions
  * @return currentState
  */
-function getCurrentState(config: AxiosSerializerRequestOptions): AxiosSerializerCurrentStateType {
+function getCurrentState(config: SerializerRequestOptions): SerializerCurrentStateType {
 	const currentState = config['axios-serializer'] || {}
 	currentState.retryCount = currentState.retryCount || 0
 	config['axios-serializer'] = currentState
@@ -69,10 +78,11 @@ function getCurrentState(config: AxiosSerializerRequestOptions): AxiosSerializer
  */
 class AxiosSerializer {
 	axiosInstance: AxiosInstance = null as unknown as AxiosInstance
-	waiting: Array<AxiosSerializerObject> = [] // Request Queue
-	unique: boolean // Whether to cancel the previous similar requests, default: false
-	onCancel // Callback when request is cancelled
-	constructor({ unique, onCancel, ...defaultOptions }: AxiosSerializerConfig) {
+	waiting: WaitingList = {} // Request Queue
+	unique: SerializerOptions['unique'] = false // Whether to cancel the previous similar requests, default: false
+	orderly: SerializerOptions['orderly'] = true
+	onCancel: SerializerOptions['onCancel'] | null = null
+	constructor({ unique, onCancel, ...defaultOptions }: SerializerConfig) {
 		this.unique = unique ?? false
 		this.onCancel = onCancel ?? null
 		// Initialization method
@@ -83,7 +93,7 @@ class AxiosSerializer {
 	/**
 	 * Initialization
 	 */
-	public init(defaultOptions: AxiosSerializerConfig): void {
+	public init(defaultOptions: SerializerConfig): void {
 		const {
 			setHeaders,
 			onRequest,
@@ -137,46 +147,29 @@ class AxiosSerializer {
 	/**
 	 * Create request
 	 */
-	public create(options: AxiosSerializerRequestOptions): Promise<any> {
-		const { unique = this.unique, url = '' } = options
+	public async create<T = any, R = AxiosResponse<T>, D = any>(
+		// url: string | SerializerRequestOptions<D>,
+		config: SerializerRequestOptions<D>
+	): Promise<R> {
+		const { unique = this.unique, orderly = this.orderly, url = '' } = config
 		const promiseKey = Symbol('promiseKey')
 		const abortController = new AbortController()
 		const source: CancelTokenSource = axios.CancelToken.source()
-		options.requestOptions = extend(
-			true,
-			{},
-			options
-		) as unknown as AxiosSerializerRequestOptions
-		options.cancelToken = source.token
-		options.signal = abortController.signal
-		// eslint-disable-next-line no-async-promise-executor
-		const promise = new Promise(async (resolve, reject) => {
-			// Interface must return in order or need to cancel url same request
-			if (unique) {
-				let len = this.waiting.length
-				while (len > 0) {
-					len--
-					if (this.waiting[len].url === url) {
-						if (unique) {
-							this.waiting.splice(len, 1)[0].source.cancel('request canceled')
-							// abortController.abort()
-						} else {
-							try {
-								await this.waiting[len]
-								// await this.waiting.splice(len, 1)[0].promise
-							} catch {
-								this.waiting.splice(len, 1)
-								console.info('the task has been dropped')
-							}
-						}
-					}
-				}
-			}
-			// running
-			this.axiosInstance(options)
+		config.requestOptions = extend(true, {}, config) as unknown as SerializerRequestOptions
+		config.cancelToken = source.token
+		config.signal = abortController.signal
+
+		// Interface must return in order or need to cancel url same request
+		unique && this.clear(config.url!)
+
+		const promise = new Promise((resolve, reject) => {
+			this.axiosInstance(config)
 				.then((res: any) => {
-					// Request success
-					resolve(res)
+					if (!orderly) resolve(res)
+					else
+						this.wait(config.url!, promiseKey).then(() => {
+							resolve(res)
+						})
 				})
 				.catch((err: any) => {
 					// Request cancelled
@@ -185,18 +178,80 @@ class AxiosSerializer {
 					else reject(err)
 				})
 				.finally(() => {
-					const index = this.waiting.findIndex((el: any) => el.promiseKey === promiseKey)
-					index > -1 && this.waiting.splice(index, 1)
+					const index = this.waiting[config.url!].findIndex(
+						el => el.promiseKey === promiseKey
+					)
+					index > -1 && this.waiting[config.url!].splice(index, 1)
 				})
 		})
-		this.waiting.push({
+		this.add(config.url!, {
 			promiseKey,
 			url,
 			promise,
 			source,
 			abortController
 		})
-		return promise
+		return promise as Promise<R>
+	}
+
+	/**
+	 * Drop all un-need requests
+	 *
+	 * @param key - the key of waiting line, usually to be the request url
+	 */
+	public clear(key?: string) {
+		for (const url in this.waiting) {
+			// no key => clean all
+			if (!key || url === key) {
+				const seriesList = this.waiting[url] || []
+
+				for (const series of seriesList) {
+					series.source.cancel('request canceled')
+					series.abortController.abort()
+				}
+				this.waiting[url] = []
+			}
+		}
+	}
+
+	/**
+	 * Waiting to resolve the series before this request
+	 *
+	 * @param key - the key of waiting line, usually to be the request url
+	 * @param promiseKey - the unique promise key
+	 * @returns - Promise<void>
+	 */
+	private async wait(key: string, promiseKey: symbol) {
+		if (!this.orderly) return Promise.resolve()
+
+		const seriesList = this.waiting[key] || []
+		let index = seriesList.findIndex(item => item.promiseKey === promiseKey)
+
+		while (index > 0) {
+			index--
+			// do not waiting self
+			if (seriesList[index] && seriesList[index].promiseKey !== promiseKey) {
+				try {
+					await seriesList[index].promise
+					// await seriesList.splice(index, 1)[0].promise
+				} catch {
+					console.info('The task has been dropped')
+				}
+				seriesList.splice(index, 1)
+			}
+		}
+	}
+
+	/**
+	 * set series to waiting list
+	 *
+	 * @param key - the key of waiting line, usually to be the request url
+	 * @param series - waiting object
+	 */
+	private add(key: string, series: Series) {
+		if (!(key in this.waiting)) this.waiting[key] = []
+
+		this.waiting[key].push(series)
 	}
 }
 

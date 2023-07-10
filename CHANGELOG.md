@@ -1,5 +1,12 @@
 # Change logs
 
+## 2023.05.30 v1.2.0
+
+1. Improved request control execution timing
+2. Performance enhancement
+3. External tslib, make package size smaller
+4. Upgrade all packages
+
 ## 2023.05.30 v1.1.0
 
 1. new way to use
