@@ -33,6 +33,7 @@ export interface SerializerRequestOptions<D = any> extends InternalAxiosRequestC
 
 export interface SerializerConfig<D = any> extends InternalAxiosRequestConfig<D> {
 	unique?: boolean
+	orderly?: boolean
 	setHeaders?(instance: AxiosInstance): void
 	onRequest?(
 		config: InternalAxiosRequestConfig,
@@ -48,7 +49,7 @@ export interface SerializerConfig<D = any> extends InternalAxiosRequestConfig<D>
 	onCancel?(error: any): void
 }
 
-export interface Series {
+export interface WaitingItem {
 	promiseKey: symbol
 	url: string
 	promise: Promise<any>
@@ -56,7 +57,7 @@ export interface Series {
 	abortController: AbortController
 }
 
-export type WaitingList = Record<string, Series[]>
+export type WaitingList = Record<string, WaitingItem[]>
 
 /**
  * the config for retry when initialize and return
@@ -203,11 +204,11 @@ class AxiosSerializer {
 		for (const url in this.waiting) {
 			// no key => clean all
 			if (!key || url === key) {
-				const seriesList = this.waiting[url] || []
+				const waitingList = this.waiting[url] || []
 
-				for (const series of seriesList) {
-					series.source.cancel('request canceled')
-					series.abortController.abort()
+				for (const item of waitingList) {
+					item.source.cancel('request canceled')
+					item.abortController.abort()
 				}
 				this.waiting[url] = []
 			}
@@ -215,7 +216,7 @@ class AxiosSerializer {
 	}
 
 	/**
-	 * Waiting to resolve the series before this request
+	 * Waiting to resolve the item before this request
 	 *
 	 * @param key - the key of waiting line, usually to be the request url
 	 * @param promiseKey - the unique promise key
@@ -224,34 +225,34 @@ class AxiosSerializer {
 	private async wait(key: string, promiseKey: symbol) {
 		if (!this.orderly) return Promise.resolve()
 
-		const seriesList = this.waiting[key] || []
-		let index = seriesList.findIndex(item => item.promiseKey === promiseKey)
+		const waitingList = this.waiting[key] || []
+		let index = waitingList.findIndex(item => item.promiseKey === promiseKey)
 
 		while (index > 0) {
 			index--
 			// do not waiting self
-			if (seriesList[index] && seriesList[index].promiseKey !== promiseKey) {
+			if (waitingList[index] && waitingList[index].promiseKey !== promiseKey) {
 				try {
-					await seriesList[index].promise
-					// await seriesList.splice(index, 1)[0].promise
+					await waitingList[index].promise
+					// await waitingList.splice(index, 1)[0].promise
 				} catch {
 					console.info('The task has been dropped')
 				}
-				seriesList.splice(index, 1)
+				waitingList.splice(index, 1)
 			}
 		}
 	}
 
 	/**
-	 * set series to waiting list
+	 * set item to waiting list
 	 *
 	 * @param key - the key of waiting line, usually to be the request url
-	 * @param series - waiting object
+	 * @param item - waiting object
 	 */
-	private add(key: string, series: Series) {
+	private add(key: string, item: WaitingItem) {
 		if (!(key in this.waiting)) this.waiting[key] = []
 
-		this.waiting[key].push(series)
+		this.waiting[key].push(item)
 	}
 }
 
