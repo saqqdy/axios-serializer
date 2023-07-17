@@ -30,7 +30,7 @@ devDependencies:
     version: 5.6.1(@babel/core@7.22.8)(eslint@8.44.0)(prettier@2.8.8)(typescript@5.1.6)
   '@microsoft/api-extractor':
     specifier: ^7.36.1
-    version: 7.36.1(@types/node@20.4.1)
+    version: 7.36.2(@types/node@20.4.1)
   '@rollup/plugin-babel':
     specifier: ^6.0.3
     version: 6.0.3(@babel/core@7.22.8)(rollup@3.26.2)
@@ -2041,8 +2041,8 @@ packages:
       - '@types/node'
     dev: true
 
-  /@microsoft/api-extractor@7.36.1(@types/node@20.4.1):
-    resolution: {integrity: sha512-2SPp1jq6wDY5IOsRLUv/4FxngslctBZJlztAJ3uWpCAwqKQG7ESdL3DhEza+StbYLtBQmu1Pk6q1Vkhl7qD/bg==}
+  /@microsoft/api-extractor@7.36.2(@types/node@20.4.1):
+    resolution: {integrity: sha512-ONe/jOmTZtR3OjTkWKHmeSV1P5ozbHDxHr6FV3KoWyIl1AcPk2B3dmvVBM5eOlZB5bgM66nxcWQTZ6msQo2hHg==}
     hasBin: true
     dependencies:
       '@microsoft/api-extractor-model': 7.27.4(@types/node@20.4.1)
