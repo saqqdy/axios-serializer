@@ -1,0 +1,6967 @@
+{
+	"id": 0,
+	"name": "index.md",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 201,
+			"name": "default",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "AxiosSerializer class"
+					}
+				],
+				"blockTags": [
+					{
+						"tag": "@returns",
+						"content": [
+							{
+								"kind": "text",
+								"text": "Promise"
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 202,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 86,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L86"
+						}
+					],
+					"signatures": [
+						{
+							"id": 203,
+							"name": "new default",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 86,
+									"character": 1,
+									"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L86"
+								}
+							],
+							"parameters": [
+								{
+									"id": 204,
+									"name": "__namedParameters",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 93,
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
+										"name": "SerializerConfig",
+										"package": "axios-serializer"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 201,
+								"name": "AxiosSerializer",
+								"package": "axios-serializer"
+							}
+						}
+					]
+				},
+				{
+					"id": 205,
+					"name": "axiosInstance",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 81,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L81"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "AxiosInstance"
+						},
+						"name": "AxiosInstance",
+						"package": "axios"
+					},
+					"defaultValue": "..."
+				},
+				{
+					"id": 209,
+					"name": "onCancel",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 85,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L85"
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 210,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 16,
+											"character": 12,
+											"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L16"
+										}
+									],
+									"signatures": [
+										{
+											"id": 211,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "src/index.ts",
+													"line": 16,
+													"character": 12,
+													"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L16"
+												}
+											],
+											"parameters": [
+												{
+													"id": 212,
+													"name": "err",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {},
+													"type": {
+														"type": "intrinsic",
+														"name": "any"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							}
+						]
+					},
+					"defaultValue": "null"
+				},
+				{
+					"id": 208,
+					"name": "orderly",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 84,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L84"
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						]
+					},
+					"defaultValue": "true"
+				},
+				{
+					"id": 207,
+					"name": "unique",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 83,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L83"
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "undefined"
+							},
+							{
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						]
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 206,
+					"name": "waiting",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 82,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L82"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 200,
+						"name": "WaitingList",
+						"package": "axios-serializer"
+					},
+					"defaultValue": "{}"
+				},
+				{
+					"id": 229,
+					"name": "add",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 255,
+							"character": 9,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L255"
+						}
+					],
+					"signatures": [
+						{
+							"id": 230,
+							"name": "add",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "set item to waiting list"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 255,
+									"character": 9,
+									"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L255"
+								}
+							],
+							"parameters": [
+								{
+									"id": 231,
+									"name": "key",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "the key of waiting line, usually to be the request url"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 232,
+									"name": "item",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "waiting object"
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 194,
+										"name": "WaitingItem",
+										"package": "axios-serializer"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 222,
+					"name": "clear",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 206,
+							"character": 8,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L206"
+						}
+					],
+					"signatures": [
+						{
+							"id": 223,
+							"name": "clear",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Drop all un-need requests"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 206,
+									"character": 8,
+									"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L206"
+								}
+							],
+							"parameters": [
+								{
+									"id": 224,
+									"name": "key",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isOptional": true
+									},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "the key of waiting line, usually to be the request url"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 216,
+					"name": "create",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 151,
+							"character": 14,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L151"
+						}
+					],
+					"signatures": [
+						{
+							"id": 217,
+							"name": "create",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Create request"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 151,
+									"character": 14,
+									"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L151"
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 218,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"default": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 219,
+									"name": "R",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"default": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"qualifiedName": "AxiosResponse"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "T",
+												"refersToTypeParameter": true
+											},
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
+										"name": "AxiosResponse",
+										"package": "axios"
+									}
+								},
+								{
+									"id": 220,
+									"name": "D",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"default": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 221,
+									"name": "config",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 11,
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": -1,
+												"name": "D",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "SerializerRequestOptions",
+										"package": "axios-serializer"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "reference",
+										"target": -1,
+										"name": "R",
+										"refersToTypeParameter": true
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 213,
+					"name": "init",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPublic": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 97,
+							"character": 8,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L97"
+						}
+					],
+					"signatures": [
+						{
+							"id": 214,
+							"name": "init",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Initialization"
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 97,
+									"character": 8,
+									"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L97"
+								}
+							],
+							"parameters": [
+								{
+									"id": 215,
+									"name": "defaultOptions",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 93,
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
+										"name": "SerializerConfig",
+										"package": "axios-serializer"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 225,
+					"name": "wait",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isPrivate": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 228,
+							"character": 15,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L228"
+						}
+					],
+					"signatures": [
+						{
+							"id": 226,
+							"name": "wait",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Waiting to resolve the item before this request"
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "- Promise<void>"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 228,
+									"character": 15,
+									"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L228"
+								}
+							],
+							"parameters": [
+								{
+									"id": 227,
+									"name": "key",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "the key of waiting line, usually to be the request url"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 228,
+									"name": "promiseKey",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "the unique promise key"
+											}
+										]
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "symbol"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						202
+					]
+				},
+				{
+					"title": "Properties",
+					"children": [
+						205,
+						209,
+						208,
+						207,
+						206
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						229,
+						222,
+						216,
+						213,
+						225
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 80,
+					"character": 6,
+					"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L80"
+				}
+			]
+		},
+		{
+			"id": 93,
+			"name": "SerializerConfig",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"children": [
+				{
+					"id": 131,
+					"name": "adapter",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 316,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"qualifiedName": "AxiosAdapterConfig"
+								},
+								"name": "AxiosAdapterConfig",
+								"package": "axios"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+										"qualifiedName": "AxiosAdapterConfig"
+									},
+									"name": "AxiosAdapterConfig",
+									"package": "axios"
+								}
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.adapter"
+					}
+				},
+				{
+					"id": 132,
+					"name": "auth",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 317,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "AxiosBasicCredentials"
+						},
+						"name": "AxiosBasicCredentials",
+						"package": "axios"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.auth"
+					}
+				},
+				{
+					"id": 122,
+					"name": "baseURL",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 306,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.baseURL"
+					}
+				},
+				{
+					"id": 153,
+					"name": "beforeRedirect",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 329,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 154,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"line": 329,
+									"character": 19
+								}
+							],
+							"signatures": [
+								{
+									"id": 155,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isExternal": true
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"line": 329,
+											"character": 19
+										}
+									],
+									"parameters": [
+										{
+											"id": 156,
+											"name": "options",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.es5.d.ts",
+													"qualifiedName": "Record"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "any"
+													}
+												],
+												"name": "Record",
+												"package": "typescript"
+											}
+										},
+										{
+											"id": 157,
+											"name": "responseDetails",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 158,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													},
+													"children": [
+														{
+															"id": 159,
+															"name": "headers",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isExternal": true
+															},
+															"sources": [
+																{
+																	"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+																	"line": 329,
+																	"character": 69
+																}
+															],
+															"type": {
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.es5.d.ts",
+																	"qualifiedName": "Record"
+																},
+																"typeArguments": [
+																	{
+																		"type": "intrinsic",
+																		"name": "string"
+																	},
+																	{
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																],
+																"name": "Record",
+																"package": "typescript"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																159
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+															"line": 329,
+															"character": 67
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.beforeRedirect"
+					}
+				},
+				{
+					"id": 165,
+					"name": "cancelToken",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 335,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "CancelToken"
+						},
+						"name": "CancelToken",
+						"package": "axios"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.cancelToken"
+					}
+				},
+				{
+					"id": 127,
+					"name": "data",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 312,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": -1,
+						"name": "D",
+						"refersToTypeParameter": true
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.data"
+					}
+				},
+				{
+					"id": 166,
+					"name": "decompress",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 336,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.decompress"
+					}
+				},
+				{
+					"id": 170,
+					"name": "env",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 340,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 171,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {
+								"isExternal": true
+							},
+							"children": [
+								{
+									"id": 172,
+									"name": "FormData",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {
+										"isExternal": true,
+										"isOptional": true
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"line": 341,
+											"character": 4
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 173,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 512,
+											"flags": {
+												"isExternal": true
+											},
+											"sources": [
+												{
+													"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+													"line": 341,
+													"character": 15
+												}
+											],
+											"signatures": [
+												{
+													"id": 174,
+													"name": "new FormData",
+													"variant": "signature",
+													"kind": 16384,
+													"flags": {
+														"isExternal": true
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+															"line": 341,
+															"character": 15
+														}
+													],
+													"parameters": [
+														{
+															"id": 175,
+															"name": "args",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {
+																"isExternal": true,
+																"isRest": true
+															},
+															"type": {
+																"type": "array",
+																"elementType": {
+																	"type": "intrinsic",
+																	"name": "any"
+																}
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "object"
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										172
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"line": 340,
+									"character": 8
+								}
+							]
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.env"
+					}
+				},
+				{
+					"id": 177,
+					"name": "family",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 344,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": 4
+							},
+							{
+								"type": "literal",
+								"value": 6
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.family"
+					}
+				},
+				{
+					"id": 176,
+					"name": "formSerializer",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 343,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "FormSerializerOptions"
+						},
+						"name": "FormSerializerOptions",
+						"package": "axios"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.formSerializer"
+					}
+				},
+				{
+					"id": 119,
+					"name": "headers",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 353,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "AxiosRequestHeaders"
+						},
+						"name": "AxiosRequestHeaders",
+						"package": "axios"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.headers"
+					}
+				},
+				{
+					"id": 162,
+					"name": "httpAgent",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 332,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.httpAgent"
+					}
+				},
+				{
+					"id": 163,
+					"name": "httpsAgent",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 333,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.httpsAgent"
+					}
+				},
+				{
+					"id": 169,
+					"name": "insecureHTTPParser",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 339,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.insecureHTTPParser"
+					}
+				},
+				{
+					"id": 178,
+					"name": "lookup",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 345,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 179,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {
+										"isExternal": true
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"line": 345,
+											"character": 12
+										}
+									],
+									"signatures": [
+										{
+											"id": 180,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {
+												"isExternal": true
+											},
+											"sources": [
+												{
+													"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+													"line": 345,
+													"character": 12
+												}
+											],
+											"parameters": [
+												{
+													"id": 181,
+													"name": "hostname",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 182,
+													"name": "options",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "object"
+													}
+												},
+												{
+													"id": 183,
+													"name": "cb",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "reflection",
+														"declaration": {
+															"id": 184,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {
+																"isExternal": true
+															},
+															"sources": [
+																{
+																	"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+																	"line": 345,
+																	"character": 52
+																}
+															],
+															"signatures": [
+																{
+																	"id": 185,
+																	"name": "__type",
+																	"variant": "signature",
+																	"kind": 4096,
+																	"flags": {
+																		"isExternal": true
+																	},
+																	"sources": [
+																		{
+																			"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+																			"line": 345,
+																			"character": 52
+																		}
+																	],
+																	"parameters": [
+																		{
+																			"id": 186,
+																			"name": "err",
+																			"variant": "param",
+																			"kind": 32768,
+																			"flags": {
+																				"isExternal": true
+																			},
+																			"type": {
+																				"type": "union",
+																				"types": [
+																					{
+																						"type": "literal",
+																						"value": null
+																					},
+																					{
+																						"type": "reference",
+																						"target": {
+																							"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.es5.d.ts",
+																							"qualifiedName": "Error"
+																						},
+																						"name": "Error",
+																						"package": "typescript"
+																					}
+																				]
+																			}
+																		},
+																		{
+																			"id": 187,
+																			"name": "address",
+																			"variant": "param",
+																			"kind": 32768,
+																			"flags": {
+																				"isExternal": true
+																			},
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			}
+																		},
+																		{
+																			"id": 188,
+																			"name": "family",
+																			"variant": "param",
+																			"kind": 32768,
+																			"flags": {
+																				"isExternal": true
+																			},
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "number"
+																			}
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "void"
+																	}
+																}
+															]
+														}
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 189,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {
+										"isExternal": true
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"line": 346,
+											"character": 7
+										}
+									],
+									"signatures": [
+										{
+											"id": 190,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {
+												"isExternal": true
+											},
+											"sources": [
+												{
+													"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+													"line": 346,
+													"character": 7
+												}
+											],
+											"parameters": [
+												{
+													"id": 191,
+													"name": "hostname",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 192,
+													"name": "options",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "object"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.es5.d.ts",
+													"qualifiedName": "Promise"
+												},
+												"typeArguments": [
+													{
+														"type": "union",
+														"types": [
+															{
+																"type": "intrinsic",
+																"name": "string"
+															},
+															{
+																"type": "tuple",
+																"elements": [
+																	{
+																		"type": "namedTupleMember",
+																		"name": "address",
+																		"isOptional": false,
+																		"element": {
+																			"type": "intrinsic",
+																			"name": "string"
+																		}
+																	},
+																	{
+																		"type": "namedTupleMember",
+																		"name": "family",
+																		"isOptional": false,
+																		"element": {
+																			"type": "intrinsic",
+																			"name": "number"
+																		}
+																	}
+																]
+															}
+														]
+													}
+												],
+												"name": "Promise",
+												"package": "typescript"
+											}
+										}
+									]
+								}
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.lookup"
+					}
+				},
+				{
+					"id": 150,
+					"name": "maxBodyLength",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 326,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.maxBodyLength"
+					}
+				},
+				{
+					"id": 145,
+					"name": "maxContentLength",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 324,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.maxContentLength"
+					}
+				},
+				{
+					"id": 152,
+					"name": "maxRate",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 328,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "number"
+							},
+							{
+								"type": "tuple",
+								"elements": [
+									{
+										"type": "intrinsic",
+										"name": "number"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.maxRate"
+					}
+				},
+				{
+					"id": 151,
+					"name": "maxRedirects",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 327,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.maxRedirects"
+					}
+				},
+				{
+					"id": 121,
+					"name": "method",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 305,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.method"
+					}
+				},
+				{
+					"id": 141,
+					"name": "onDownloadProgress",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 323,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 142,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"line": 323,
+									"character": 23
+								}
+							],
+							"signatures": [
+								{
+									"id": 143,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isExternal": true
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"line": 323,
+											"character": 23
+										}
+									],
+									"parameters": [
+										{
+											"id": 144,
+											"name": "progressEvent",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+													"qualifiedName": "AxiosProgressEvent"
+												},
+												"name": "AxiosProgressEvent",
+												"package": "axios"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.onDownloadProgress"
+					}
+				},
+				{
+					"id": 137,
+					"name": "onUploadProgress",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 322,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 138,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"line": 322,
+									"character": 21
+								}
+							],
+							"signatures": [
+								{
+									"id": 139,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isExternal": true
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"line": 322,
+											"character": 21
+										}
+									],
+									"parameters": [
+										{
+											"id": 140,
+											"name": "progressEvent",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+													"qualifiedName": "AxiosProgressEvent"
+												},
+												"name": "AxiosProgressEvent",
+												"package": "axios"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.onUploadProgress"
+					}
+				},
+				{
+					"id": 95,
+					"name": "orderly",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 36,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L36"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 125,
+					"name": "params",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 310,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.params"
+					}
+				},
+				{
+					"id": 126,
+					"name": "paramsSerializer",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 311,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"qualifiedName": "CustomParamsSerializer"
+								},
+								"name": "CustomParamsSerializer",
+								"package": "axios"
+							},
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"qualifiedName": "ParamsSerializerOptions"
+								},
+								"name": "ParamsSerializerOptions",
+								"package": "axios"
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.paramsSerializer"
+					}
+				},
+				{
+					"id": 164,
+					"name": "proxy",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 334,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": false
+							},
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"qualifiedName": "AxiosProxyConfig"
+								},
+								"name": "AxiosProxyConfig",
+								"package": "axios"
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.proxy"
+					}
+				},
+				{
+					"id": 134,
+					"name": "responseEncoding",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 319,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.responseEncoding"
+					}
+				},
+				{
+					"id": 133,
+					"name": "responseType",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 318,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "ResponseType"
+						},
+						"name": "ResponseType",
+						"package": "axios"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.responseType"
+					}
+				},
+				{
+					"id": 168,
+					"name": "signal",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 338,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "GenericAbortSignal"
+						},
+						"name": "GenericAbortSignal",
+						"package": "axios"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.signal"
+					}
+				},
+				{
+					"id": 160,
+					"name": "socketPath",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 330,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.socketPath"
+					}
+				},
+				{
+					"id": 128,
+					"name": "timeout",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 313,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.timeout"
+					}
+				},
+				{
+					"id": 129,
+					"name": "timeoutErrorMessage",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 314,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.timeoutErrorMessage"
+					}
+				},
+				{
+					"id": 123,
+					"name": "transformRequest",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 307,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"qualifiedName": "AxiosRequestTransformer"
+								},
+								"name": "AxiosRequestTransformer",
+								"package": "axios"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+										"qualifiedName": "AxiosRequestTransformer"
+									},
+									"name": "AxiosRequestTransformer",
+									"package": "axios"
+								}
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.transformRequest"
+					}
+				},
+				{
+					"id": 124,
+					"name": "transformResponse",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 308,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"qualifiedName": "AxiosResponseTransformer"
+								},
+								"name": "AxiosResponseTransformer",
+								"package": "axios"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+										"qualifiedName": "AxiosResponseTransformer"
+									},
+									"name": "AxiosResponseTransformer",
+									"package": "axios"
+								}
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.transformResponse"
+					}
+				},
+				{
+					"id": 167,
+					"name": "transitional",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 337,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "TransitionalOptions"
+						},
+						"name": "TransitionalOptions",
+						"package": "axios"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.transitional"
+					}
+				},
+				{
+					"id": 161,
+					"name": "transport",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 331,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.transport"
+					}
+				},
+				{
+					"id": 94,
+					"name": "unique",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 35,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L35"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 120,
+					"name": "url",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 304,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.url"
+					}
+				},
+				{
+					"id": 146,
+					"name": "validateStatus",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 325,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 147,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {
+										"isExternal": true
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"line": 325,
+											"character": 20
+										}
+									],
+									"signatures": [
+										{
+											"id": 148,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {
+												"isExternal": true
+											},
+											"sources": [
+												{
+													"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+													"line": 325,
+													"character": 20
+												}
+											],
+											"parameters": [
+												{
+													"id": 149,
+													"name": "status",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									]
+								}
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.validateStatus"
+					}
+				},
+				{
+					"id": 130,
+					"name": "withCredentials",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 315,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.withCredentials"
+					}
+				},
+				{
+					"id": 135,
+					"name": "xsrfCookieName",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 320,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.xsrfCookieName"
+					}
+				},
+				{
+					"id": 136,
+					"name": "xsrfHeaderName",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 321,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.xsrfHeaderName"
+					}
+				},
+				{
+					"id": 116,
+					"name": "onCancel",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 49,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L49"
+						}
+					],
+					"signatures": [
+						{
+							"id": 117,
+							"name": "onCancel",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 49,
+									"character": 1,
+									"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L49"
+								}
+							],
+							"parameters": [
+								{
+									"id": 118,
+									"name": "error",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 113,
+					"name": "onError",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 48,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L48"
+						}
+					],
+					"signatures": [
+						{
+							"id": 114,
+							"name": "onError",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 48,
+									"character": 1,
+									"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L48"
+								}
+							],
+							"parameters": [
+								{
+									"id": 115,
+									"name": "error",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 99,
+					"name": "onRequest",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 38,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L38"
+						}
+					],
+					"signatures": [
+						{
+							"id": 100,
+							"name": "onRequest",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 38,
+									"character": 1,
+									"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L38"
+								}
+							],
+							"parameters": [
+								{
+									"id": 101,
+									"name": "config",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"qualifiedName": "InternalAxiosRequestConfig"
+										},
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
+										"name": "InternalAxiosRequestConfig",
+										"package": "axios"
+									}
+								},
+								{
+									"id": 102,
+									"name": "requestOptions",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 11,
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
+										"name": "SerializerRequestOptions",
+										"package": "axios-serializer"
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"qualifiedName": "InternalAxiosRequestConfig"
+										},
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
+										"name": "InternalAxiosRequestConfig",
+										"package": "axios"
+									},
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Promise"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+													"qualifiedName": "InternalAxiosRequestConfig"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "any"
+													}
+												],
+												"name": "InternalAxiosRequestConfig",
+												"package": "axios"
+											}
+										],
+										"name": "Promise",
+										"package": "typescript"
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"id": 103,
+					"name": "onRequestError",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 42,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L42"
+						}
+					],
+					"signatures": [
+						{
+							"id": 104,
+							"name": "onRequestError",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 42,
+									"character": 1,
+									"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L42"
+								}
+							],
+							"parameters": [
+								{
+									"id": 105,
+									"name": "error",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 106,
+					"name": "onResponse",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 43,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L43"
+						}
+					],
+					"signatures": [
+						{
+							"id": 107,
+							"name": "onResponse",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 43,
+									"character": 1,
+									"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L43"
+								}
+							],
+							"parameters": [
+								{
+									"id": 108,
+									"name": "res",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"qualifiedName": "AxiosResponse"
+										},
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											},
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
+										"name": "AxiosResponse",
+										"package": "axios"
+									}
+								},
+								{
+									"id": 109,
+									"name": "requestOptions",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": 11,
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
+										"name": "SerializerRequestOptions",
+										"package": "axios-serializer"
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"qualifiedName": "AxiosResponse"
+										},
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "any"
+											},
+											{
+												"type": "intrinsic",
+												"name": "any"
+											}
+										],
+										"name": "AxiosResponse",
+										"package": "axios"
+									},
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Promise"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+													"qualifiedName": "AxiosResponse"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "any"
+													},
+													{
+														"type": "intrinsic",
+														"name": "any"
+													}
+												],
+												"name": "AxiosResponse",
+												"package": "axios"
+											}
+										],
+										"name": "Promise",
+										"package": "typescript"
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"id": 110,
+					"name": "onResponseError",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 47,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L47"
+						}
+					],
+					"signatures": [
+						{
+							"id": 111,
+							"name": "onResponseError",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 47,
+									"character": 1,
+									"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L47"
+								}
+							],
+							"parameters": [
+								{
+									"id": 112,
+									"name": "error",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 96,
+					"name": "setHeaders",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 37,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L37"
+						}
+					],
+					"signatures": [
+						{
+							"id": 97,
+							"name": "setHeaders",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 37,
+									"character": 1,
+									"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L37"
+								}
+							],
+							"parameters": [
+								{
+									"id": 98,
+									"name": "instance",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"qualifiedName": "AxiosInstance"
+										},
+										"name": "AxiosInstance",
+										"package": "axios"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						131,
+						132,
+						122,
+						153,
+						165,
+						127,
+						166,
+						170,
+						177,
+						176,
+						119,
+						162,
+						163,
+						169,
+						178,
+						150,
+						145,
+						152,
+						151,
+						121,
+						141,
+						137,
+						95,
+						125,
+						126,
+						164,
+						134,
+						133,
+						168,
+						160,
+						128,
+						129,
+						123,
+						124,
+						167,
+						161,
+						94,
+						120,
+						146,
+						130,
+						135,
+						136
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						116,
+						113,
+						99,
+						103,
+						106,
+						110,
+						96
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 34,
+					"character": 17,
+					"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L34"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 193,
+					"name": "D",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"default": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+						"qualifiedName": "InternalAxiosRequestConfig"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": -1,
+							"name": "D",
+							"refersToTypeParameter": true
+						}
+					],
+					"name": "InternalAxiosRequestConfig",
+					"package": "axios"
+				}
+			]
+		},
+		{
+			"id": 8,
+			"name": "SerializerCurrentStateType",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"children": [
+				{
+					"id": 9,
+					"name": "lastRequestTime",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 20,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L20"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 10,
+					"name": "retryCount",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 21,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L21"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						9,
+						10
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 19,
+					"character": 17,
+					"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L19"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "SerializerOptions",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"children": [
+				{
+					"id": 4,
+					"name": "onCancel",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 16,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L16"
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 5,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 16,
+									"character": 12,
+									"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L16"
+								}
+							],
+							"signatures": [
+								{
+									"id": 6,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "src/index.ts",
+											"line": 16,
+											"character": 12,
+											"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L16"
+										}
+									],
+									"parameters": [
+										{
+											"id": 7,
+											"name": "err",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 3,
+					"name": "orderly",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 15,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L15"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 2,
+					"name": "unique",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 14,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L14"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						4,
+						3,
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 13,
+					"character": 17,
+					"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L13"
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.es5.d.ts",
+						"qualifiedName": "Record"
+					},
+					"typeArguments": [
+						{
+							"type": "intrinsic",
+							"name": "string"
+						},
+						{
+							"type": "intrinsic",
+							"name": "unknown"
+						}
+					],
+					"name": "Record",
+					"package": "typescript"
+				}
+			]
+		},
+		{
+			"id": 11,
+			"name": "SerializerRequestOptions",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"children": [
+				{
+					"id": 31,
+					"name": "adapter",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 316,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"qualifiedName": "AxiosAdapterConfig"
+								},
+								"name": "AxiosAdapterConfig",
+								"package": "axios"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+										"qualifiedName": "AxiosAdapterConfig"
+									},
+									"name": "AxiosAdapterConfig",
+									"package": "axios"
+								}
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.adapter"
+					}
+				},
+				{
+					"id": 32,
+					"name": "auth",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 317,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "AxiosBasicCredentials"
+						},
+						"name": "AxiosBasicCredentials",
+						"package": "axios"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.auth"
+					}
+				},
+				{
+					"id": 12,
+					"name": "axios-serializer",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 25,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L25"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				},
+				{
+					"id": 22,
+					"name": "baseURL",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 306,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.baseURL"
+					}
+				},
+				{
+					"id": 53,
+					"name": "beforeRedirect",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 329,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 54,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"line": 329,
+									"character": 19
+								}
+							],
+							"signatures": [
+								{
+									"id": 55,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isExternal": true
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"line": 329,
+											"character": 19
+										}
+									],
+									"parameters": [
+										{
+											"id": 56,
+											"name": "options",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.es5.d.ts",
+													"qualifiedName": "Record"
+												},
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													},
+													{
+														"type": "intrinsic",
+														"name": "any"
+													}
+												],
+												"name": "Record",
+												"package": "typescript"
+											}
+										},
+										{
+											"id": 57,
+											"name": "responseDetails",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reflection",
+												"declaration": {
+													"id": 58,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													},
+													"children": [
+														{
+															"id": 59,
+															"name": "headers",
+															"variant": "declaration",
+															"kind": 1024,
+															"flags": {
+																"isExternal": true
+															},
+															"sources": [
+																{
+																	"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+																	"line": 329,
+																	"character": 69
+																}
+															],
+															"type": {
+																"type": "reference",
+																"target": {
+																	"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.es5.d.ts",
+																	"qualifiedName": "Record"
+																},
+																"typeArguments": [
+																	{
+																		"type": "intrinsic",
+																		"name": "string"
+																	},
+																	{
+																		"type": "intrinsic",
+																		"name": "string"
+																	}
+																],
+																"name": "Record",
+																"package": "typescript"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Properties",
+															"children": [
+																59
+															]
+														}
+													],
+													"sources": [
+														{
+															"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+															"line": 329,
+															"character": 67
+														}
+													]
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.beforeRedirect"
+					}
+				},
+				{
+					"id": 16,
+					"name": "cancelToken",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 29,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L29"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "CancelToken"
+						},
+						"name": "CancelToken",
+						"package": "axios"
+					},
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.cancelToken"
+					}
+				},
+				{
+					"id": 27,
+					"name": "data",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 312,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": -1,
+						"name": "D",
+						"refersToTypeParameter": true
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.data"
+					}
+				},
+				{
+					"id": 65,
+					"name": "decompress",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 336,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.decompress"
+					}
+				},
+				{
+					"id": 69,
+					"name": "env",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 340,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 70,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {
+								"isExternal": true
+							},
+							"children": [
+								{
+									"id": 71,
+									"name": "FormData",
+									"variant": "declaration",
+									"kind": 1024,
+									"flags": {
+										"isExternal": true,
+										"isOptional": true
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"line": 341,
+											"character": 4
+										}
+									],
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 72,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 512,
+											"flags": {
+												"isExternal": true
+											},
+											"sources": [
+												{
+													"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+													"line": 341,
+													"character": 15
+												}
+											],
+											"signatures": [
+												{
+													"id": 73,
+													"name": "new FormData",
+													"variant": "signature",
+													"kind": 16384,
+													"flags": {
+														"isExternal": true
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+															"line": 341,
+															"character": 15
+														}
+													],
+													"parameters": [
+														{
+															"id": 74,
+															"name": "args",
+															"variant": "param",
+															"kind": 32768,
+															"flags": {
+																"isExternal": true,
+																"isRest": true
+															},
+															"type": {
+																"type": "array",
+																"elementType": {
+																	"type": "intrinsic",
+																	"name": "any"
+																}
+															}
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "object"
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"groups": [
+								{
+									"title": "Properties",
+									"children": [
+										71
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"line": 340,
+									"character": 8
+								}
+							]
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.env"
+					}
+				},
+				{
+					"id": 18,
+					"name": "error",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 31,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L31"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 76,
+					"name": "family",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 344,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": 4
+							},
+							{
+								"type": "literal",
+								"value": 6
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.family"
+					}
+				},
+				{
+					"id": 75,
+					"name": "formSerializer",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 343,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "FormSerializerOptions"
+						},
+						"name": "FormSerializerOptions",
+						"package": "axios"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.formSerializer"
+					}
+				},
+				{
+					"id": 19,
+					"name": "headers",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 353,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "AxiosRequestHeaders"
+						},
+						"name": "AxiosRequestHeaders",
+						"package": "axios"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.headers"
+					}
+				},
+				{
+					"id": 62,
+					"name": "httpAgent",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 332,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.httpAgent"
+					}
+				},
+				{
+					"id": 63,
+					"name": "httpsAgent",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 333,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.httpsAgent"
+					}
+				},
+				{
+					"id": 68,
+					"name": "insecureHTTPParser",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 339,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.insecureHTTPParser"
+					}
+				},
+				{
+					"id": 77,
+					"name": "lookup",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 345,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 78,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {
+										"isExternal": true
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"line": 345,
+											"character": 12
+										}
+									],
+									"signatures": [
+										{
+											"id": 79,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {
+												"isExternal": true
+											},
+											"sources": [
+												{
+													"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+													"line": 345,
+													"character": 12
+												}
+											],
+											"parameters": [
+												{
+													"id": 80,
+													"name": "hostname",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 81,
+													"name": "options",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "object"
+													}
+												},
+												{
+													"id": 82,
+													"name": "cb",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "reflection",
+														"declaration": {
+															"id": 83,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {
+																"isExternal": true
+															},
+															"sources": [
+																{
+																	"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+																	"line": 345,
+																	"character": 52
+																}
+															],
+															"signatures": [
+																{
+																	"id": 84,
+																	"name": "__type",
+																	"variant": "signature",
+																	"kind": 4096,
+																	"flags": {
+																		"isExternal": true
+																	},
+																	"sources": [
+																		{
+																			"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+																			"line": 345,
+																			"character": 52
+																		}
+																	],
+																	"parameters": [
+																		{
+																			"id": 85,
+																			"name": "err",
+																			"variant": "param",
+																			"kind": 32768,
+																			"flags": {
+																				"isExternal": true
+																			},
+																			"type": {
+																				"type": "union",
+																				"types": [
+																					{
+																						"type": "literal",
+																						"value": null
+																					},
+																					{
+																						"type": "reference",
+																						"target": {
+																							"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.es5.d.ts",
+																							"qualifiedName": "Error"
+																						},
+																						"name": "Error",
+																						"package": "typescript"
+																					}
+																				]
+																			}
+																		},
+																		{
+																			"id": 86,
+																			"name": "address",
+																			"variant": "param",
+																			"kind": 32768,
+																			"flags": {
+																				"isExternal": true
+																			},
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			}
+																		},
+																		{
+																			"id": 87,
+																			"name": "family",
+																			"variant": "param",
+																			"kind": 32768,
+																			"flags": {
+																				"isExternal": true
+																			},
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "number"
+																			}
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "void"
+																	}
+																}
+															]
+														}
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "void"
+											}
+										}
+									]
+								}
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 88,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {
+										"isExternal": true
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"line": 346,
+											"character": 7
+										}
+									],
+									"signatures": [
+										{
+											"id": 89,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {
+												"isExternal": true
+											},
+											"sources": [
+												{
+													"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+													"line": 346,
+													"character": 7
+												}
+											],
+											"parameters": [
+												{
+													"id": 90,
+													"name": "hostname",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 91,
+													"name": "options",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "object"
+													}
+												}
+											],
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.es5.d.ts",
+													"qualifiedName": "Promise"
+												},
+												"typeArguments": [
+													{
+														"type": "union",
+														"types": [
+															{
+																"type": "intrinsic",
+																"name": "string"
+															},
+															{
+																"type": "tuple",
+																"elements": [
+																	{
+																		"type": "namedTupleMember",
+																		"name": "address",
+																		"isOptional": false,
+																		"element": {
+																			"type": "intrinsic",
+																			"name": "string"
+																		}
+																	},
+																	{
+																		"type": "namedTupleMember",
+																		"name": "family",
+																		"isOptional": false,
+																		"element": {
+																			"type": "intrinsic",
+																			"name": "number"
+																		}
+																	}
+																]
+															}
+														]
+													}
+												],
+												"name": "Promise",
+												"package": "typescript"
+											}
+										}
+									]
+								}
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.lookup"
+					}
+				},
+				{
+					"id": 50,
+					"name": "maxBodyLength",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 326,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.maxBodyLength"
+					}
+				},
+				{
+					"id": 45,
+					"name": "maxContentLength",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 324,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.maxContentLength"
+					}
+				},
+				{
+					"id": 52,
+					"name": "maxRate",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 328,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "intrinsic",
+								"name": "number"
+							},
+							{
+								"type": "tuple",
+								"elements": [
+									{
+										"type": "intrinsic",
+										"name": "number"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.maxRate"
+					}
+				},
+				{
+					"id": 51,
+					"name": "maxRedirects",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 327,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.maxRedirects"
+					}
+				},
+				{
+					"id": 21,
+					"name": "method",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 305,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.method"
+					}
+				},
+				{
+					"id": 41,
+					"name": "onDownloadProgress",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 323,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 42,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"line": 323,
+									"character": 23
+								}
+							],
+							"signatures": [
+								{
+									"id": 43,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isExternal": true
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"line": 323,
+											"character": 23
+										}
+									],
+									"parameters": [
+										{
+											"id": 44,
+											"name": "progressEvent",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+													"qualifiedName": "AxiosProgressEvent"
+												},
+												"name": "AxiosProgressEvent",
+												"package": "axios"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.onDownloadProgress"
+					}
+				},
+				{
+					"id": 37,
+					"name": "onUploadProgress",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 322,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 38,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"line": 322,
+									"character": 21
+								}
+							],
+							"signatures": [
+								{
+									"id": 39,
+									"name": "__type",
+									"variant": "signature",
+									"kind": 4096,
+									"flags": {
+										"isExternal": true
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"line": 322,
+											"character": 21
+										}
+									],
+									"parameters": [
+										{
+											"id": 40,
+											"name": "progressEvent",
+											"variant": "param",
+											"kind": 32768,
+											"flags": {
+												"isExternal": true
+											},
+											"type": {
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+													"qualifiedName": "AxiosProgressEvent"
+												},
+												"name": "AxiosProgressEvent",
+												"package": "axios"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							]
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.onUploadProgress"
+					}
+				},
+				{
+					"id": 14,
+					"name": "orderly",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 27,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L27"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 25,
+					"name": "params",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 310,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.params"
+					}
+				},
+				{
+					"id": 26,
+					"name": "paramsSerializer",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 311,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"qualifiedName": "CustomParamsSerializer"
+								},
+								"name": "CustomParamsSerializer",
+								"package": "axios"
+							},
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"qualifiedName": "ParamsSerializerOptions"
+								},
+								"name": "ParamsSerializerOptions",
+								"package": "axios"
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.paramsSerializer"
+					}
+				},
+				{
+					"id": 64,
+					"name": "proxy",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 334,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": false
+							},
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"qualifiedName": "AxiosProxyConfig"
+								},
+								"name": "AxiosProxyConfig",
+								"package": "axios"
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.proxy"
+					}
+				},
+				{
+					"id": 15,
+					"name": "requestOptions",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 28,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L28"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": 11,
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "any"
+							}
+						],
+						"name": "SerializerRequestOptions",
+						"package": "axios-serializer"
+					}
+				},
+				{
+					"id": 34,
+					"name": "responseEncoding",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 319,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.responseEncoding"
+					}
+				},
+				{
+					"id": 33,
+					"name": "responseType",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 318,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "ResponseType"
+						},
+						"name": "ResponseType",
+						"package": "axios"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.responseType"
+					}
+				},
+				{
+					"id": 67,
+					"name": "signal",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 338,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "GenericAbortSignal"
+						},
+						"name": "GenericAbortSignal",
+						"package": "axios"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.signal"
+					}
+				},
+				{
+					"id": 60,
+					"name": "socketPath",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 330,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.socketPath"
+					}
+				},
+				{
+					"id": 28,
+					"name": "timeout",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 313,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.timeout"
+					}
+				},
+				{
+					"id": 29,
+					"name": "timeoutErrorMessage",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 314,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.timeoutErrorMessage"
+					}
+				},
+				{
+					"id": 23,
+					"name": "transformRequest",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 307,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"qualifiedName": "AxiosRequestTransformer"
+								},
+								"name": "AxiosRequestTransformer",
+								"package": "axios"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+										"qualifiedName": "AxiosRequestTransformer"
+									},
+									"name": "AxiosRequestTransformer",
+									"package": "axios"
+								}
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.transformRequest"
+					}
+				},
+				{
+					"id": 24,
+					"name": "transformResponse",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 308,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+									"qualifiedName": "AxiosResponseTransformer"
+								},
+								"name": "AxiosResponseTransformer",
+								"package": "axios"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+										"qualifiedName": "AxiosResponseTransformer"
+									},
+									"name": "AxiosResponseTransformer",
+									"package": "axios"
+								}
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.transformResponse"
+					}
+				},
+				{
+					"id": 66,
+					"name": "transitional",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 337,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "TransitionalOptions"
+						},
+						"name": "TransitionalOptions",
+						"package": "axios"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.transitional"
+					}
+				},
+				{
+					"id": 61,
+					"name": "transport",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 331,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.transport"
+					}
+				},
+				{
+					"id": 17,
+					"name": "type",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 30,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L30"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 13,
+					"name": "unique",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 26,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L26"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 20,
+					"name": "url",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 304,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.url"
+					}
+				},
+				{
+					"id": 46,
+					"name": "validateStatus",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 325,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 47,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {
+										"isExternal": true
+									},
+									"sources": [
+										{
+											"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+											"line": 325,
+											"character": 20
+										}
+									],
+									"signatures": [
+										{
+											"id": 48,
+											"name": "__type",
+											"variant": "signature",
+											"kind": 4096,
+											"flags": {
+												"isExternal": true
+											},
+											"sources": [
+												{
+													"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+													"line": 325,
+													"character": 20
+												}
+											],
+											"parameters": [
+												{
+													"id": 49,
+													"name": "status",
+													"variant": "param",
+													"kind": 32768,
+													"flags": {
+														"isExternal": true
+													},
+													"type": {
+														"type": "intrinsic",
+														"name": "number"
+													}
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											}
+										}
+									]
+								}
+							}
+						]
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.validateStatus"
+					}
+				},
+				{
+					"id": 30,
+					"name": "withCredentials",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 315,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.withCredentials"
+					}
+				},
+				{
+					"id": 35,
+					"name": "xsrfCookieName",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 320,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.xsrfCookieName"
+					}
+				},
+				{
+					"id": 36,
+					"name": "xsrfHeaderName",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"line": 321,
+							"character": 2
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "InternalAxiosRequestConfig.xsrfHeaderName"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						31,
+						32,
+						12,
+						22,
+						53,
+						16,
+						27,
+						65,
+						69,
+						18,
+						76,
+						75,
+						19,
+						62,
+						63,
+						68,
+						77,
+						50,
+						45,
+						52,
+						51,
+						21,
+						41,
+						37,
+						14,
+						25,
+						26,
+						64,
+						15,
+						34,
+						33,
+						67,
+						60,
+						28,
+						29,
+						23,
+						24,
+						66,
+						61,
+						17,
+						13,
+						20,
+						46,
+						30,
+						35,
+						36
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 24,
+					"character": 17,
+					"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L24"
+				}
+			],
+			"typeParameters": [
+				{
+					"id": 92,
+					"name": "D",
+					"variant": "typeParam",
+					"kind": 131072,
+					"flags": {},
+					"default": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+						"qualifiedName": "InternalAxiosRequestConfig"
+					},
+					"typeArguments": [
+						{
+							"type": "reference",
+							"target": -1,
+							"name": "D",
+							"refersToTypeParameter": true
+						}
+					],
+					"name": "InternalAxiosRequestConfig",
+					"package": "axios"
+				}
+			]
+		},
+		{
+			"id": 194,
+			"name": "WaitingItem",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"children": [
+				{
+					"id": 199,
+					"name": "abortController",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 57,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L57"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.dom.d.ts",
+							"qualifiedName": "AbortController"
+						},
+						"name": "AbortController",
+						"package": "typescript"
+					}
+				},
+				{
+					"id": 197,
+					"name": "promise",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 55,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L55"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Promise"
+						},
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "any"
+							}
+						],
+						"name": "Promise",
+						"package": "typescript"
+					}
+				},
+				{
+					"id": 195,
+					"name": "promiseKey",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 53,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L53"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "symbol"
+					}
+				},
+				{
+					"id": 198,
+					"name": "source",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 56,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L56"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+							"qualifiedName": "CancelTokenSource"
+						},
+						"name": "CancelTokenSource",
+						"package": "axios"
+					}
+				},
+				{
+					"id": 196,
+					"name": "url",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 54,
+							"character": 1,
+							"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L54"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						199,
+						197,
+						195,
+						198,
+						196
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 52,
+					"character": 17,
+					"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L52"
+				}
+			]
+		},
+		{
+			"id": 200,
+			"name": "WaitingList",
+			"variant": "declaration",
+			"kind": 2097152,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "src/index.ts",
+					"line": 60,
+					"character": 12,
+					"url": "https://github.com/saqqdy/axios-serializer/blob/3918d76/src/index.ts#L60"
+				}
+			],
+			"type": {
+				"type": "reference",
+				"target": {
+					"sourceFileName": "node_modules/.pnpm/typescript@5.2.2/node_modules/typescript/lib/lib.es5.d.ts",
+					"qualifiedName": "Record"
+				},
+				"typeArguments": [
+					{
+						"type": "intrinsic",
+						"name": "string"
+					},
+					{
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"target": 194,
+							"name": "WaitingItem",
+							"package": "axios-serializer"
+						}
+					}
+				],
+				"name": "Record",
+				"package": "typescript"
+			}
+		}
+	],
+	"groups": [
+		{
+			"title": "Classes",
+			"children": [
+				201
+			]
+		},
+		{
+			"title": "Interfaces",
+			"children": [
+				93,
+				8,
+				1,
+				11,
+				194
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				200
+			]
+		}
+	],
+	"packageName": "axios-serializer",
+	"packageVersion": "1.3.0",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "<div style=\"text-align: center;\" align=\"center\">\n\n# axios-serializer\n\nA serializer for axios\n\n[![NPM version][npm-image]][npm-url]\n[![Codacy Badge][codacy-image]][codacy-url]\n[![Test coverage][codecov-image]][codecov-url]\n[![npm download][download-image]][download-url]\n[![gzip][gzip-image]][gzip-url]\n[![License][license-image]][license-url]\n\n[![Sonar][sonar-image]][sonar-url]\n\n</div>\n\n<div style=\"text-align: center; margin-bottom: 20px;\" align=\"center\">\n\n### **[Documentation](https://www.saqqdy.com/axios-serializer)** • **[Change Log](./CHANGELOG.md)**\n\n**Read this in other languages: English | [简体中文](./README-zh_CN.md)**\n\n</div>\n\n## Installing\n\n> "
+		},
+		{
+			"kind": "code",
+			"text": "`axios-serializer`"
+		},
+		{
+			"kind": "text",
+			"text": " comes with the latest version of axios, so you can install it without the "
+		},
+		{
+			"kind": "code",
+			"text": "`axios`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```bash\n# use pnpm\n$ pnpm install axios-serializer\n\n# use npm\n$ npm install axios-serializer --save\n\n# use yarn\n$ yarn add axios-serializer\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## Usage\n\n### General use\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\n// {app_root}/src/plugins/axios.js\nimport { getCookie, setCookie } from 'js-cool'\nimport AxiosSerializer from 'axios-serializer'\n\n/**\n * Set the request header\n *\n * @param {object} instance AxiosInstance\n */\nfunction setHeaders(instance) {\n  instance.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'\n}\n/**\n * Request Interceptor\n *\n * @param {object} config AxiosRequestConfig\n * @param {object} options request options AxiosSerializerRequestOptions\n * @returns AxiosRequestConfig\n */\nfunction onRequest(config, options = {}) {\n  // some codes\n  return config\n}\n/**\n * Execute on request error\n *\n * @param {object} err Error\n */\nfunction onRequestError(err) {\n  console.error(err)\n}\n/**\n * Response Interceptor\n *\n * @param {object} res AxiosResponse<any>\n * @param {object} options request options AxiosSerializerRequestOptions\n * @returns Promise<unknown>\n */\nfunction onResponse(res, options = {}) {\n  if (res.data.success) return res.data\n  return Promise.reject(res.data)\n}\n/**\n * Execute in response error\n *\n * @param {object} err Error\n */\nfunction onResponseError(err) {\n  console.error(err)\n}\n/**\n * Execute on request error & response error\n *\n * @param {object} err Error\n */\nfunction onError(err) {\n  console.error(err)\n}\n/**\n * Request Cancelled\n *\n * @param {object} err Error\n */\nfunction onCancel(err) {\n  console.error(err.message)\n}\n\n// Instantiation\nconst axiosSerializer = new AxiosSerializer({\n  unique: true, // Whether to cancel the previous similar requests, default: false\n  setHeaders, // function for setting request headers\n  onRequest, // Request Interceptor\n  onRequestError, // Execute on request error\n  onResponse, // Response Interceptor\n  onResponseError, // Execute on response error\n  onError, // Execute on request error & response error\n  onCancel // Callback when request is cancelled\n})\n\nexport default options => {\n  // Here set the unique and orderly priority higher than the instantiation configuration\n  options.unique = options.unique ?? false\n  // Here the unique has a higher priority\n  return axiosSerializer.create(options)\n}\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n### Using with "
+		},
+		{
+			"kind": "code",
+			"text": "`vue2.0`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\nSometimes we need to use "
+		},
+		{
+			"kind": "code",
+			"text": "`this`"
+		},
+		{
+			"kind": "text",
+			"text": " (vue instance) inside "
+		},
+		{
+			"kind": "code",
+			"text": "`onRequest`"
+		},
+		{
+			"kind": "text",
+			"text": " or "
+		},
+		{
+			"kind": "code",
+			"text": "`onResponse`"
+		},
+		{
+			"kind": "text",
+			"text": ", we can use it like this\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport AxiosSerializer from 'axios-serializer'\n\nlet axiosSerializer = null\n// Request Interceptor\nfunction onRequest(config, options = {}) {\n  // this => vueInstance\n  return config\n}\n// Response Interceptor\nfunction onResponse(res, options = {}) {\n  // hide loading\n  if (this instanceof Vue) {\n    this.$loader.hide()\n  }\n  if (res.data.success) return res.data\n  return Promise.reject(res.data)\n}\n\nexport default options => {\n  // Only need to initialize once\n  if (!axiosSerializer)\n    axiosSerializer = new AxiosSerializer({\n      onRequest: onRequest.bind(this),\n      onResponse: onResponse.bind(this)\n    })\n\n  // show loading\n  if (this instanceof Vue) {\n    this.$loader.show()\n  }\n  return axiosSerializer.create(options)\n}\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n### Using unpkg CDN\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```html\n<script src=\"https://unpkg.com/axios-serializer@1.1.0/dist/index.global.prod.js\"></script>\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## Support & Issues\n\nPlease open an issue [here](https://github.com/saqqdy/axios-serializer/issues).\n\n## License\n\n[MIT](LICENSE)\n\n[npm-image]: https://img.shields.io/npm/v/axios-serializer.svg?style=flat-square\n[npm-url]: https://npmjs.org/package/axios-serializer\n[codacy-image]: https://app.codacy.com/project/badge/Grade/f70d4880e4ad4f40aa970eb9ee9d0696\n[codacy-url]: https://www.codacy.com/gh/saqqdy/axios-serializer/dashboard?utm_source=github.com&utm_medium=referral&utm_content=saqqdy/axios-serializer&utm_campaign=Badge_Grade\n[codecov-image]: https://img.shields.io/codecov/c/github/saqqdy/axios-serializer.svg?style=flat-square\n[codecov-url]: https://codecov.io/github/saqqdy/axios-serializer?branch=master\n[download-image]: https://img.shields.io/npm/dm/axios-serializer.svg?style=flat-square\n[download-url]: https://npmjs.org/package/axios-serializer\n[gzip-image]: http://img.badgesize.io/https://unpkg.com/axios-serializer/dist/index.global.prod.js?compression=gzip&label=gzip%20size:%20JS\n[gzip-url]: http://img.badgesize.io/https://unpkg.com/axios-serializer/dist/index.global.prod.js?compression=gzip&label=gzip%20size:%20JS\n[license-image]: https://img.shields.io/badge/License-MIT-blue.svg\n[license-url]: LICENSE\n[sonar-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=saqqdy_axios-serializer\n[sonar-url]: https://sonarcloud.io/dashboard?id=saqqdy_axios-serializer"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerOptions"
+		},
+		"2": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerOptions.unique"
+		},
+		"3": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerOptions.orderly"
+		},
+		"4": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerOptions.onCancel"
+		},
+		"5": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"6": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"7": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "err"
+		},
+		"8": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerCurrentStateType"
+		},
+		"9": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerCurrentStateType.lastRequestTime"
+		},
+		"10": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerCurrentStateType.retryCount"
+		},
+		"11": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerRequestOptions"
+		},
+		"12": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerRequestOptions.axios-serializer"
+		},
+		"13": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerRequestOptions.unique"
+		},
+		"14": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerRequestOptions.orderly"
+		},
+		"15": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerRequestOptions.requestOptions"
+		},
+		"16": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerRequestOptions.cancelToken"
+		},
+		"17": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerRequestOptions.type"
+		},
+		"18": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerRequestOptions.error"
+		},
+		"19": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "InternalAxiosRequestConfig.headers"
+		},
+		"20": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.url"
+		},
+		"21": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.method"
+		},
+		"22": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.baseURL"
+		},
+		"23": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.transformRequest"
+		},
+		"24": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.transformResponse"
+		},
+		"25": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.params"
+		},
+		"26": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.paramsSerializer"
+		},
+		"27": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.data"
+		},
+		"28": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.timeout"
+		},
+		"29": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.timeoutErrorMessage"
+		},
+		"30": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.withCredentials"
+		},
+		"31": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.adapter"
+		},
+		"32": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.auth"
+		},
+		"33": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.responseType"
+		},
+		"34": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.responseEncoding"
+		},
+		"35": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.xsrfCookieName"
+		},
+		"36": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.xsrfHeaderName"
+		},
+		"37": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.onUploadProgress"
+		},
+		"38": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"39": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"40": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "progressEvent"
+		},
+		"41": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.onDownloadProgress"
+		},
+		"42": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"43": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"44": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "progressEvent"
+		},
+		"45": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.maxContentLength"
+		},
+		"46": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.validateStatus"
+		},
+		"47": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"48": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"49": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "status"
+		},
+		"50": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.maxBodyLength"
+		},
+		"51": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.maxRedirects"
+		},
+		"52": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.maxRate"
+		},
+		"53": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.beforeRedirect"
+		},
+		"54": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"55": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"56": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "options"
+		},
+		"57": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "responseDetails"
+		},
+		"58": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"59": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type.headers"
+		},
+		"60": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.socketPath"
+		},
+		"61": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.transport"
+		},
+		"62": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.httpAgent"
+		},
+		"63": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.httpsAgent"
+		},
+		"64": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.proxy"
+		},
+		"65": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.decompress"
+		},
+		"66": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.transitional"
+		},
+		"67": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.signal"
+		},
+		"68": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.insecureHTTPParser"
+		},
+		"69": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.env"
+		},
+		"70": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"71": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type.FormData"
+		},
+		"72": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"73": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"74": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "args"
+		},
+		"75": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.formSerializer"
+		},
+		"76": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.family"
+		},
+		"77": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.lookup"
+		},
+		"78": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"79": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"80": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "hostname"
+		},
+		"81": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "options"
+		},
+		"82": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "cb"
+		},
+		"83": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"84": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"85": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "err"
+		},
+		"86": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "address"
+		},
+		"87": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "family"
+		},
+		"88": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"89": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"90": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "hostname"
+		},
+		"91": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "options"
+		},
+		"92": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerRequestOptions.D"
+		},
+		"93": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig"
+		},
+		"94": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.unique"
+		},
+		"95": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.orderly"
+		},
+		"96": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.setHeaders"
+		},
+		"97": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.setHeaders"
+		},
+		"98": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "instance"
+		},
+		"99": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.onRequest"
+		},
+		"100": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.onRequest"
+		},
+		"101": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "config"
+		},
+		"102": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "requestOptions"
+		},
+		"103": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.onRequestError"
+		},
+		"104": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.onRequestError"
+		},
+		"105": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "error"
+		},
+		"106": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.onResponse"
+		},
+		"107": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.onResponse"
+		},
+		"108": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "res"
+		},
+		"109": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "requestOptions"
+		},
+		"110": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.onResponseError"
+		},
+		"111": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.onResponseError"
+		},
+		"112": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "error"
+		},
+		"113": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.onError"
+		},
+		"114": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.onError"
+		},
+		"115": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "error"
+		},
+		"116": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.onCancel"
+		},
+		"117": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.onCancel"
+		},
+		"118": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "error"
+		},
+		"119": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "InternalAxiosRequestConfig.headers"
+		},
+		"120": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.url"
+		},
+		"121": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.method"
+		},
+		"122": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.baseURL"
+		},
+		"123": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.transformRequest"
+		},
+		"124": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.transformResponse"
+		},
+		"125": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.params"
+		},
+		"126": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.paramsSerializer"
+		},
+		"127": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.data"
+		},
+		"128": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.timeout"
+		},
+		"129": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.timeoutErrorMessage"
+		},
+		"130": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.withCredentials"
+		},
+		"131": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.adapter"
+		},
+		"132": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.auth"
+		},
+		"133": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.responseType"
+		},
+		"134": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.responseEncoding"
+		},
+		"135": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.xsrfCookieName"
+		},
+		"136": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.xsrfHeaderName"
+		},
+		"137": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.onUploadProgress"
+		},
+		"138": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"139": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"140": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "progressEvent"
+		},
+		"141": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.onDownloadProgress"
+		},
+		"142": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"143": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"144": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "progressEvent"
+		},
+		"145": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.maxContentLength"
+		},
+		"146": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.validateStatus"
+		},
+		"147": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"148": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"149": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "status"
+		},
+		"150": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.maxBodyLength"
+		},
+		"151": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.maxRedirects"
+		},
+		"152": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.maxRate"
+		},
+		"153": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.beforeRedirect"
+		},
+		"154": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"155": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"156": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "options"
+		},
+		"157": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "responseDetails"
+		},
+		"158": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"159": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type.headers"
+		},
+		"160": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.socketPath"
+		},
+		"161": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.transport"
+		},
+		"162": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.httpAgent"
+		},
+		"163": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.httpsAgent"
+		},
+		"164": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.proxy"
+		},
+		"165": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.cancelToken"
+		},
+		"166": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.decompress"
+		},
+		"167": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.transitional"
+		},
+		"168": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.signal"
+		},
+		"169": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.insecureHTTPParser"
+		},
+		"170": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.env"
+		},
+		"171": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"172": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type.FormData"
+		},
+		"173": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"174": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"175": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "args"
+		},
+		"176": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.formSerializer"
+		},
+		"177": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.family"
+		},
+		"178": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "AxiosRequestConfig.lookup"
+		},
+		"179": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"180": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"181": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "hostname"
+		},
+		"182": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "options"
+		},
+		"183": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "cb"
+		},
+		"184": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"185": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"186": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "err"
+		},
+		"187": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "address"
+		},
+		"188": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "family"
+		},
+		"189": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"190": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"191": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "hostname"
+		},
+		"192": {
+			"sourceFileName": "node_modules/.pnpm/axios@1.5.1_debug@4.3.4/node_modules/axios/index.d.ts",
+			"qualifiedName": "options"
+		},
+		"193": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "SerializerConfig.D"
+		},
+		"194": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "WaitingItem"
+		},
+		"195": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "WaitingItem.promiseKey"
+		},
+		"196": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "WaitingItem.url"
+		},
+		"197": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "WaitingItem.promise"
+		},
+		"198": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "WaitingItem.source"
+		},
+		"199": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "WaitingItem.abortController"
+		},
+		"200": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "WaitingList"
+		},
+		"201": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer"
+		},
+		"202": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.__constructor"
+		},
+		"203": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer"
+		},
+		"204": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__0"
+		},
+		"205": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.axiosInstance"
+		},
+		"206": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.waiting"
+		},
+		"207": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.unique"
+		},
+		"208": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.orderly"
+		},
+		"209": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.onCancel"
+		},
+		"210": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"211": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "__type"
+		},
+		"212": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "err"
+		},
+		"213": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.init"
+		},
+		"214": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.init"
+		},
+		"215": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "defaultOptions"
+		},
+		"216": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.create"
+		},
+		"217": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.create"
+		},
+		"218": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "T"
+		},
+		"219": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "R"
+		},
+		"220": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "D"
+		},
+		"221": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "config"
+		},
+		"222": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.clear"
+		},
+		"223": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.clear"
+		},
+		"224": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "key"
+		},
+		"225": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.wait"
+		},
+		"226": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.wait"
+		},
+		"227": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "key"
+		},
+		"228": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "promiseKey"
+		},
+		"229": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.add"
+		},
+		"230": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "AxiosSerializer.add"
+		},
+		"231": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "key"
+		},
+		"232": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "item"
+		}
+	}
+}
