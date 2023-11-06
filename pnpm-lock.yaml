@@ -72,7 +72,7 @@ devDependencies:
     version: 8.51.0
   fast-glob:
     specifier: ^3.3.1
-    version: 3.3.1
+    version: 3.3.2
   jest:
     specifier: ^29.7.0
     version: 29.7.0(@types/node@20.8.4)
@@ -2278,7 +2278,7 @@ packages:
       '@node-kit/extra.fs': 2.5.1
       '@node-kit/extra.path': 2.5.1
       '@node-kit/lerna-workspace-root': 2.5.1
-      fast-glob: 3.3.1
+      fast-glob: 3.3.2
     dev: true
 
   /@node-kit/lerna-workspace-root@2.5.1:
@@ -2293,7 +2293,7 @@ packages:
     dependencies:
       '@node-kit/extra.path': 2.5.1
       '@node-kit/pnpm-workspace-root': 2.5.1
-      fast-glob: 3.3.1
+      fast-glob: 3.3.2
       load-yml: 1.4.0
     dev: true
 
@@ -2311,7 +2311,7 @@ packages:
       '@node-kit/extra.fs': 2.5.1
       '@node-kit/extra.path': 2.5.1
       '@node-kit/yarn-workspace-root': 2.5.1
-      fast-glob: 3.3.1
+      fast-glob: 3.3.2
     dev: true
 
   /@node-kit/yarn-workspace-root@2.5.1:
@@ -2423,7 +2423,7 @@ packages:
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     dependencies:
       cross-spawn: 7.0.3
-      fast-glob: 3.3.1
+      fast-glob: 3.3.2
       is-glob: 4.0.3
       open: 9.1.0
       picocolors: 1.0.0
@@ -2723,7 +2723,7 @@ packages:
   /@ts-morph/common@0.21.0:
     resolution: {integrity: sha512-ES110Mmne5Vi4ypUKrtVQfXFDtCsDXiUiGxF6ILVlE90dDD4fdpC1LSjydl/ml7xJWKSDZwUYD2zkOePMSrPBA==}
     dependencies:
-      fast-glob: 3.3.1
+      fast-glob: 3.3.2
       minimatch: 7.4.3
       mkdirp: 2.1.6
       path-browserify: 1.0.1
@@ -4957,8 +4957,8 @@ packages:
     resolution: {integrity: sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==}
     dev: true
 
-  /fast-glob@3.3.1:
-    resolution: {integrity: sha512-kNFPyjhh5cKjrUltxs+wFx+ZkbRaxxmZ+X0ZU31SOsxCEtP9VPgtq2teZw1DebupL5GmDaNQ6yKMMVcM41iqDg==}
+  /fast-glob@3.3.2:
+    resolution: {integrity: sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==}
     engines: {node: '>=8.6.0'}
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -5329,7 +5329,7 @@ packages:
     dependencies:
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.3.1
+      fast-glob: 3.3.2
       ignore: 5.2.4
       merge2: 1.4.1
       slash: 3.0.0
@@ -5340,7 +5340,7 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       dir-glob: 3.0.1
-      fast-glob: 3.3.1
+      fast-glob: 3.3.2
       ignore: 5.2.4
       merge2: 1.4.1
       slash: 4.0.0
